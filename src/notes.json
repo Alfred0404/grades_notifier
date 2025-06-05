@@ -1,0 +1,1887 @@
+[
+  {
+    "name": "2024/2025 ING3 CLA",
+    "semesters": [
+      {
+        "name": "Semestre 5 / Semester 5 >> Programme ING3 à l'international au S5",
+        "modules": []
+      },
+      {
+        "name": "Semestre 6 >> Inter S5 - Paris S6",
+        "modules": [
+          {
+            "name": "MODULE LFH 6 / LANGUAGES AND HUMAN SCIENCES UNIT",
+            "courses": [
+              {
+                "name": "LV2 Japonais / Foreign language 2 Japanese",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "MOOC Actualites de la Géopolitique / MOOC News of Geopolitics",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Droit du travail / Labour Law",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Analyse financière et économique / Financial and Economic Analysis",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Anglais 6 / English 6",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "MOOC Dévelopement Durable / MOOC News of Geopolitics",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.63,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE SCIENCES ET TECHNIQUES 2 / SCIENCES & TECHNOLOGY UNIT",
+            "courses": [
+              {
+                "name": "POO Java / OOP Java",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 18.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.6,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 17.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "MOOC Nanotechnologies / MOOC Nanotechnology",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.1,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Thermodynamique / Thermodynamics",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Initiation aux réseaux / Network Initiation",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Probabilités et statistiques / Probability and Statistics",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 5.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": null,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Calcul embarqué / Embedded numerical methods",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 11.85,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": null,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": null,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": null,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "TechAway - Programming - N2 / TechAway Programming",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bonus / Bonus",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE STAGE  / INTERNSHIP UNIT",
+            "courses": [
+              {
+                "name": "Stage ING3 / Internship ING3",
+                "coefficient": 4.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE PROJET / Unit Project",
+            "courses": [
+              {
+                "name": "MOOC Gestion de Projet / MOOC Project Management",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ING2 CLA 2023-2024",
+    "semesters": [
+      {
+        "name": "Semestre 3 / SEMESTER 3 >> TC Ing2",
+        "modules": [
+          {
+            "name": "MODULE LANGUES ET FORMATION HUMAINES  / LANGUAGES AND HUMAN SCIENCES UNIT",
+            "courses": [
+              {
+                "name": "LV2 Japonais / Japaneese",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.6,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Anglais / English 3",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.85,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "SHIFTs B2 / SHIFTs B2",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.07,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "L'ingénieur et la société  / The engineer and society 1",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE PROJET  / PROJECT UNIT",
+            "courses": [
+              {
+                "name": "Projet ING2 - ECE CUP / ING2 Project - ECE-CUP",
+                "coefficient": 4.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 13.67,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 14.65,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE SCIENCES & TECHNIQUES  / SCIENCES & TECHNOLOGY UNIT",
+            "courses": [
+              {
+                "name": "Probabilités et Analyse  / Analysis",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Théorie des graphes / Graph Theory",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.75,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.33,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Electromagnétisme  / Electromagnetism 1",
+                "coefficient": 4.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 8.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.25,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bases de Données / Databases",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "De l'Atome à la Puce / From atoms to electronic chips",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.75,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 9.52,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.25,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bonus / Bonus",
+                "coefficient": 2.2,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          }
+        ]
+      },
+      {
+        "name": "Semestre 4 / SEMESTER 4 >> TC Ing2",
+        "modules": [
+          {
+            "name": "MODULE LANGUES ET FORMATION HUMAINES  / LANGUAGES AND HUMAN SCIENCES UNIT",
+            "courses": [
+              {
+                "name": "LV2 Japonais / Japanese",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.7,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Anglais  / English",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.6,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Ethique de l'ingénieur / Engineering Ethics",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Initiation à la gestion d'entreprise / Introduction to Business Management",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "L'ingénieur et la société  / The engineer and society",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE PROJET  / PROJECT UNIT ECE-CUP",
+            "courses": [
+              {
+                "name": "Projet ING2 - ECE CUP / ING2 Project - ECE-CUP",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.75,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE SCIENCES & TECHNIQUES  / SCIENCES & TECHNOLOGIES UNIT",
+            "courses": [
+              {
+                "name": "Electromagnétisme  / Electromagnetism",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 7.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 3.75,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 5.75,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bases de Données / Databases",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 19.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.19,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Du capteur à l'automatique / Captors",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 16.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 9.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 9.63,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 6.29,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 9.14,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 14.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Algèbre 3 & Analyse 4 / Algebra 3 & Analysis 4",
+                "coefficient": 4.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 4.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 3.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Programmation Web / Web programming",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bonus / Bonus",
+                "coefficient": 1.9,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "MODULE STAGE / INTERNSHIP UNIT",
+            "courses": [
+              {
+                "name": "Stage ING2 / ING2 Internship",
+                "coefficient": 4.0,
+                "resit": 14.0,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 8.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Année 1 - 2022/2023 - Septembre et Mars",
+    "semesters": [
+      {
+        "name": "Semestre 1 / Semester 1 >> Classique",
+        "modules": [
+          {
+            "name": "Module Langues et Formation Humaine / Unit Languages, Communication and Management",
+            "courses": [
+              {
+                "name": "Japonais / Japanese",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.25,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Découverte de l'entreprise / Discovery of the company",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Anglais 1 / English 1",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 13.53,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 4.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Maitrise du français écrit / Mastery of written French",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 9.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 8.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "Module Sciences et Techniques / Unit Sciences and Technology",
+            "courses": [
+              {
+                "name": "Analyse 1 et Algèbre 1  /  Analysis 1 and Algebra 1",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 8.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 7.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Electronique numérique / Electronics",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 19.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 13.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 9.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 11.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Mécanique et Oscillations 1 / Mechanics and Oscillations 1",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 11.75,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 7.25,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Informatique / Computing",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 19.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 14.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 14.25,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 19.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Bonus (s'ajoute à la moyenne) / Bonus points (added to the student’s average)",
+                "coefficient": 2.4,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          }
+        ]
+      },
+      {
+        "name": "Semestre 2 / Semester 2 >> Classique",
+        "modules": [
+          {
+            "name": "Module Langues et Formation Humaine / Unit Languages, Communication and Management",
+            "courses": [
+              {
+                "name": "Anglais 2 / English 2",
+                "coefficient": 3.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 11.85,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Japonais / Japanese",
+                "coefficient": 2.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 17.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Maitrise du français écrit / Mastery of written French",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 11.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 10.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 10.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "SHIFTs B1 / SHIFTs B1",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "Module Projet ECE-CUP / Unit Project ECE-CUP",
+            "courses": [
+              {
+                "name": "Projet ECE-CUP 2  / Projet ECE-CUP 2 / ECE CUP Project 2",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 16.55,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "Module Sciences et Techniques / Unit Sciences and Technology",
+            "courses": [
+              {
+                "name": "Bonus (s'ajoute à la moyenne) / Bonus points (added to the student’s average)",
+                "coefficient": 2.2,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Electronique Analogique  / Analog and Digital Electrical Circuit",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 6.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 7.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 5.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 18.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 5.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Informatique 2 / Computing 2",
+                "coefficient": 6.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 16.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 17.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 18.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 10.25,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Projet",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Analyse 2 et Algèbre 2 / Analysis 2 and Algebra 2",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 20.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 15.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 12.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 15.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 7.5,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              },
+              {
+                "name": "Mécanique et Oscillations 2 / Mechanics and Oscillations 2",
+                "coefficient": 5.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.5,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 17.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  },
+                  {
+                    "name": "Examen",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": 12.0,
+                        "weight": 100.0
+                      },
+                      {
+                        "value": 10.0,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          },
+          {
+            "name": "Module PACT / UNIT PACT",
+            "courses": [
+              {
+                "name": "PACT / Pact",
+                "coefficient": 1.0,
+                "resit": null,
+                "courseParts": [
+                  {
+                    "name": "Contrôle Continu",
+                    "weight": null,
+                    "grades": [
+                      {
+                        "value": null,
+                        "weight": 100.0
+                      }
+                    ],
+                    "average": 0
+                  }
+                ],
+                "average": 0
+              }
+            ],
+            "average": 0
+          }
+        ]
+      }
+    ]
+  }
+]
