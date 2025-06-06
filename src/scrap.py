@@ -1,6 +1,20 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-ajax_url = "https://campusonline.inseec.net/note/note_ajax.php?AccountName=0%2BHIsIomHaMXLccdGi6GmWIfC2E1e%2BWv3lbOOw%2FzJoQ%3D&c=classique&mode_affichage=&version=PROD&mode_test=N"
+if os.path.exists(".env"):
+    try:
+        from dotenv import load_dotenv
+
+        load_dotenv()
+    except ImportError:
+        print("dotenv module not found, skipping .env loading")
+
+ajax_url = os.getenv("GRADES_URL")
+
+if not ajax_url:
+    raise ValueError("GRADES_URL environment variable is not set.")
+
 dom_file = "src/last_dom.txt"
 
 
@@ -14,7 +28,9 @@ def get_dom(ajax_url=ajax_url, dom_file="src/last_dom.txt"):
         response.raise_for_status()
         dom = response.text
         if not dom:
-            raise ValueError("Le DOM est vide. Vérifiez l'URL ou la connexion Internet.")
+            raise ValueError(
+                "Le DOM est vide. Vérifiez l'URL ou la connexion Internet."
+            )
     except requests.RequestException as e:
         raise RuntimeError(f"Erreur lors de la récupération du DOM : {e}")
 

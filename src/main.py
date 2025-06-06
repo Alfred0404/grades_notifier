@@ -3,7 +3,6 @@ from get_diff import get_diffs
 from extract_notes import *
 from send_ntfy_msg import send_ntfy_msg
 from utils import load_json, save_json
-import json
 import re
 
 
