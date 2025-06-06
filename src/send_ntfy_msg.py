@@ -12,8 +12,12 @@ def send_ntfy_msg(topic, message):
             "Click": "https://campusonline.inseec.net/note/note.php?AccountName=0%2BHIsIomHaMXLccdGi6GmWIfC2E1e%2BWv3lbOOw%2FzJoQ%3D&couleur=VERT",
         },
     )
+    print(f"Sending {message} to topic {topic}")
 
 
 if __name__ == "__main__":
-    send_ntfy_msg("NotesUpdate", "fesses")
-    print("Message sent successfully.")
+    try:
+        send_ntfy_msg("NotesUpdate", "fesses")
+        print("Message sent successfully.")
+    except Exception as e:
+        print(f"Failed to send message: {e}")

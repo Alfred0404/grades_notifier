@@ -226,11 +226,6 @@ def extract_year_from_rows(table_rows, i):
     return year
 
 
-def remove_useless_parts_from_rows(table_rows):
-    # En Python, on ne modifie pas le DOM, donc on ignore cette étape
-    return table_rows
-
-
 def extract_all_years_from_html(html_file):
     html_dom = open(html_file, "r", encoding="latin").read()
     if not html_dom:
@@ -240,7 +235,6 @@ def extract_all_years_from_html(html_file):
     if not table:
         return []
     table_rows = table.find_all("tr")
-    table_rows = remove_useless_parts_from_rows(table_rows)
     years = []
     for i in range(extract_years_count(table)):
         year = extract_year_from_rows(table_rows, i)

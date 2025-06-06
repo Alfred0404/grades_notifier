@@ -8,12 +8,19 @@ def get_dom(ajax_url=ajax_url, dom_file="src/last_dom.txt"):
     """
     Scrape the notes from the INSEEC website and return the HTML content.
     """
-    # Récupérer le DOM actuel
-    response = requests.get(ajax_url)
-    dom = response.text
-    if not dom:
-        raise ValueError("Le DOM est vide. Vérifiez l'URL ou la connexion Internet.")
+    try:
+        # Récupérer le DOM actuel
+        response = requests.get(ajax_url, timeout=10)
+        response.raise_for_status()
+        dom = response.text
+        if not dom:
+            raise ValueError("Le DOM est vide. Vérifiez l'URL ou la connexion Internet.")
+    except requests.RequestException as e:
+        raise RuntimeError(f"Erreur lors de la récupération du DOM : {e}")
 
-    # Enregistrer le DOM dans un fichier
-    with open(dom_file, "w", encoding="latin") as f:
-        f.write(dom)
+    try:
+        # Enregistrer le DOM dans un fichier
+        with open(dom_file, "w", encoding="latin") as f:
+            f.write(dom)
+    except OSError as e:
+        raise RuntimeError(f"Erreur lors de l'écriture du fichier DOM : {e}")

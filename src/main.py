@@ -2,11 +2,13 @@ from scrap import get_dom
 from get_diff import get_diffs
 from extract_notes import *
 from send_ntfy_msg import send_ntfy_msg
+from utils import load_json, save_json
 import json
 import re
 
 
 def print_diff_details(diff_json, notes_json):
+    diff_details = []
     for change_type, changes in diff_json.items():
         for path, value in changes.items():
             # Ex: root[0]['semesters'][1]['modules'][1]['courses'][4]['courseParts'][1]['grades'][0]
@@ -21,10 +23,12 @@ def print_diff_details(diff_json, notes_json):
             course_part = course["courseParts"][indices[4]]
             grade = course_part["grades"][indices[5]]
 
-            diff_details = f"{course['name']} | {course_part['name']} | {grade['value']} | {grade['weight']}%"
+            diff_details.append(
+                f"{course['name']} | {course_part['name']} | {grade['value']} | {grade['weight']}%"
+            )
             print(diff_details)
 
-            return diff_details
+    return diff_details
 
 
 def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
@@ -35,33 +39,15 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
     if diffs:
         # Update the old notes file with the new notes
         save_json(data, old_grades_path)
-        # Charger le nouveau JSON pour navigation
         notes_json = load_json(current_grades_path)
         diff_details = print_diff_details(diffs, notes_json)
 
         # Send a notification with the differences
-        send_ntfy_msg(
-            topic="NotesUpdate", message=diff_details
-        )
+        for message in diff_details:
+            send_ntfy_msg(topic="NotesUpdate", message=message)
 
     else:
         print("No differences found.")
-
-
-def load_json(path):
-    """
-    Load JSON data from the specified file path.
-    """
-    with open(path, "r", encoding="latin") as f:
-        return json.load(f)
-
-
-def save_json(data, path):
-    """
-    Save the given data to a JSON file at the specified path.
-    """
-    with open(path, "w", encoding="latin") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def main():
@@ -80,8 +66,7 @@ def main():
     data = extract_all_years_from_html(last_dom_path)
 
     # Save the extracted notes to a JSON file
-    with open(current_grades_path, "w", encoding="latin") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    save_json(data, current_grades_path)
 
     compare_and_upgrade_grades(old_grades_path, current_grades_path, data)
 
