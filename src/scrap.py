@@ -15,5 +15,5 @@ def get_dom(ajax_url=ajax_url, dom_file="src/last_dom.txt"):
         raise ValueError("Le DOM est vide. Vérifiez l'URL ou la connexion Internet.")
 
     # Enregistrer le DOM dans un fichier
-    with open(dom_file, "w", encoding="utf-8") as f:
+    with open(dom_file, "w", encoding="latin") as f:
         f.write(dom)

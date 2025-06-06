@@ -3,15 +3,14 @@ from get_diff import get_diffs
 from extract_notes import *
 from send_ntfy_msg import send_ntfy_msg
 import json
+import re
 
 
 def print_diff_details(diff_json, notes_json):
-    diff_details = ""
     for change_type, changes in diff_json.items():
         for path, value in changes.items():
             # Ex: root[0]['semesters'][1]['modules'][1]['courses'][4]['courseParts'][1]['grades'][0]
             # On extrait les indices
-            import re
 
             indices = [int(x) for x in re.findall(r"\[(\d+)\]", path)]
             # On navigue dans le json
@@ -21,21 +20,9 @@ def print_diff_details(diff_json, notes_json):
             course = module["courses"][indices[3]]
             course_part = course["courseParts"][indices[4]]
             grade = course_part["grades"][indices[5]]
-            print(
-                f"Changement détecté :\n"
-                f"  Année : {year['name']}\n"
-                f"  Semestre : {semester['name']}\n"
-                f"  Module : {module['name']}\n"
-                f"  Matière : {course['name']}\n"
-                f"  Partie : {course_part['name']}\n"
-                f"  Note : {grade['value']} (poids {grade['weight']})"
-            )
 
-            diff_details += (
-                f"  Matière : {course['name']}\n"
-                f"  Type : {course_part['name']}\n"
-                f"  Note : {grade['value']} (coef {grade['weight']})\n\n"
-            )
+            diff_details = f"{course['name']} | {course_part['name']} | {grade['value']} | {grade['weight']}%"
+            print(diff_details)
 
             return diff_details
 
@@ -54,7 +41,7 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
 
         # Send a notification with the differences
         send_ntfy_msg(
-            "NotesUpdate", f"Changements détectés dans les notes :\n{diff_details}"
+            topic="NotesUpdate", message=diff_details
         )
 
     else:

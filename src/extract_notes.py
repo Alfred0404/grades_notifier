@@ -232,7 +232,7 @@ def remove_useless_parts_from_rows(table_rows):
 
 
 def extract_all_years_from_html(html_file):
-    html_dom = open(html_file, "r", encoding="utf-8").read()
+    html_dom = open(html_file, "r", encoding="latin").read()
     if not html_dom:
         return []
     soup = BeautifulSoup(html_dom, "html.parser")
@@ -250,7 +250,7 @@ def extract_all_years_from_html(html_file):
 
 
 if __name__ == "__main__":
-    with open("src/last_dom.txt", "r", encoding="utf-8") as f:
+    with open("src/last_dom.txt", "r", encoding="latin") as f:
         html = f.read()
     data = extract_all_years_from_html(html)
     # print(json.dumps(data, indent=2, ensure_ascii=False))
