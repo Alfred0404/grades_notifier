@@ -1,7 +1,10 @@
 FROM python:3.13.3
 
-ADD main.py .
+WORKDIR /app
 
-RUN pip install requests beautifulsoup4 deepdiff
+COPY src/ ./src/
+COPY requirements.txt .
 
-CMD ["python", "./main.py"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "src/main.py"]
