@@ -23,15 +23,20 @@ Python scripts to automatically extract and track grades from the ECE student po
    ```sh
    pip install requests beautifulsoup4 deepdiff
    ```
+3. Build the docker image ([install docker if not already done](https://www.docker.com/products/docker-desktop/))
+   ```sh
+   docker build -t grades_notifier .
+   ```
+4. Run your docker container
+   ```sh
+   docker run grades_notifier
+   ```
 
 # 🦾 Future Enhancements
 
 Planned improvements:
 
-- ✅ Docker support for easy deployment on a home server _(e.g., Raspberry Pi)_.
 - 🕒 Scheduled execution via cron or background service.
-- 📬 Push notifications for newly posted grades.
-- 🖼️ Web interface to visualize grade history.
 
 # 🤝 Credits
 
