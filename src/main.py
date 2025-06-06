@@ -34,26 +34,31 @@ def main():
     """
     Main function to scrape the INSEEC website and get the differences in notes.
     """
+
+    last_dom_path = "src/last_dom.txt"
+    old_grades_path = "src/notes_old.json"
+    current_grades_path = "src/notes.json"
+
     # Get the current DOM and save it to a file
-    get_dom()
+    get_dom(dom_file=last_dom_path)
 
     # Extract notes from the saved DOM
-    data = extract_all_years_from_html("src/last_dom.txt")
+    data = extract_all_years_from_html(last_dom_path)
 
     # Save the extracted notes to a JSON file
-    with open("src/notes.json", "w", encoding="latin") as f:
+    with open(current_grades_path, "w", encoding="latin") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
     # Get the differences between the old and new notes
-    diffs = get_diffs("src/notes_old.json", "src/notes.json")
+    diffs = get_diffs(old_grades_path, current_grades_path)
 
     # Print the differences
     if diffs:
         # Update the old notes file with the new notes
-        with open("src/notes_old.json", "w", encoding="latin") as f:
+        with open(old_grades_path, "w", encoding="latin") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         # Charger le nouveau JSON pour navigation
-        with open("src/notes.json", "r", encoding="latin") as f:
+        with open(current_grades_path, "r", encoding="latin") as f:
             notes_json = json.load(f)
         print_diff_details(diffs, notes_json)
 
