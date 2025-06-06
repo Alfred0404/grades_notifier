@@ -1,10 +1,12 @@
 from scrap import get_dom
 from get_diff import get_diffs
 from extract_notes import *
+from send_ntfy_msg import send_ntfy_msg
 import json
 
 
 def print_diff_details(diff_json, notes_json):
+    diff_details = ""
     for change_type, changes in diff_json.items():
         for path, value in changes.items():
             # Ex: root[0]['semesters'][1]['modules'][1]['courses'][4]['courseParts'][1]['grades'][0]
@@ -29,6 +31,51 @@ def print_diff_details(diff_json, notes_json):
                 f"  Note : {grade['value']} (poids {grade['weight']})"
             )
 
+            diff_details += (
+                f"  Matière : {course['name']}\n"
+                f"  Type : {course_part['name']}\n"
+                f"  Note : {grade['value']} (coef {grade['weight']})\n\n"
+            )
+
+            return diff_details
+
+
+def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
+    # Get the differences between the old and new notes
+    diffs = get_diffs(old_grades_path, current_grades_path)
+
+    # Print the differences
+    if diffs:
+        # Update the old notes file with the new notes
+        save_json(data, old_grades_path)
+        # Charger le nouveau JSON pour navigation
+        notes_json = load_json(current_grades_path)
+        diff_details = print_diff_details(diffs, notes_json)
+
+        # Send a notification with the differences
+        send_ntfy_msg(
+            "NotesUpdate", f"Changements détectés dans les notes :\n{diff_details}"
+        )
+
+    else:
+        print("No differences found.")
+
+
+def load_json(path):
+    """
+    Load JSON data from the specified file path.
+    """
+    with open(path, "r", encoding="latin") as f:
+        return json.load(f)
+
+
+def save_json(data, path):
+    """
+    Save the given data to a JSON file at the specified path.
+    """
+    with open(path, "w", encoding="latin") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
 
 def main():
     """
@@ -49,21 +96,7 @@ def main():
     with open(current_grades_path, "w", encoding="latin") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-    # Get the differences between the old and new notes
-    diffs = get_diffs(old_grades_path, current_grades_path)
-
-    # Print the differences
-    if diffs:
-        # Update the old notes file with the new notes
-        with open(old_grades_path, "w", encoding="latin") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        # Charger le nouveau JSON pour navigation
-        with open(current_grades_path, "r", encoding="latin") as f:
-            notes_json = json.load(f)
-        print_diff_details(diffs, notes_json)
-
-    else:
-        print("No differences found.")
+    compare_and_upgrade_grades(old_grades_path, current_grades_path, data)
 
 
 if __name__ == "__main__":
