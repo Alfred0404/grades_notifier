@@ -1,19 +1,19 @@
 import requests
-from dotenv import load_dotenv
 import os
+from utils import load_env_variables
 
-if os.path.exists(".env"):
-    try:
-        from dotenv import load_dotenv
-
-        load_dotenv()
-    except ImportError:
-        print("dotenv module not found, skipping .env loading")
+load_env_variables()
 
 grades_url = os.getenv("CLICK_GRADES_URL")
 ntfy_topic = os.getenv("NTFY_TOPIC")
 
 def send_ntfy_msg(topic, message):
+    """
+    Send a notification message to the specified ntfy topic.
+
+    @param topic: The ntfy topic to send the message to.
+    @param message: The message to send.
+    """
     requests.post(
         f"https://ntfy.sh/{topic}",
         data=message.encode(encoding="latin"),
@@ -29,7 +29,7 @@ def send_ntfy_msg(topic, message):
 
 if __name__ == "__main__":
     try:
-        send_ntfy_msg(ntfy_topic, "fesses")
+        send_ntfy_msg(ntfy_topic, "bogos binted")
         print("Message sent successfully.")
     except Exception as e:
         print(f"Failed to send message: {e}")
