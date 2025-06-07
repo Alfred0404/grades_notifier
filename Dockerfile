@@ -7,6 +7,7 @@ ENV PYTHONUNBUFFERED=1 \
 WORKDIR /app
 
 COPY requirements.txt .
+COPY .env .env
 RUN apt-get update \
     && apt-get install -y --no-install-recommends gcc \
     && pip install -r requirements.txt \
