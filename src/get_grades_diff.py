@@ -1,6 +1,11 @@
 import json
 from deepdiff import DeepDiff
 from utils import load_json
+import logging
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"):
@@ -24,4 +29,4 @@ def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"
 
 if __name__ == "__main__":
     diffs = get_diffs("src/data/notes_old.json", "src/data/notes.json")
-    print(json.dumps(diffs, indent=2, ensure_ascii=False))
+    logging.info(json.dumps(diffs, indent=2, ensure_ascii=False))

@@ -96,3 +96,20 @@ Planned features:
 
 This project is based on [BragdonD's](https://github.com/BragdonD/ECE-Scripts/tree/main) original JavaScript project.
 Huge thanks to him for laying the foundation! 🙌
+
+## Docker compose exemple
+
+```bash
+version: "3.8"
+
+services:
+  grades_notifier:
+    image: grades_notifier:latest
+    container_name: grades_notifier_container
+    restart: unless-stopped
+    env_file:
+      - GRADES_URL=your_url
+      - CLICK_GRADES_URL=the_url_you_want_to_be_redirected_to
+      - NTFY_TOPIC=your_topic
+    command: python src/main.py
+```

@@ -1,5 +1,9 @@
 import requests
 import os
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 from utils import save_file, load_env_variables
 
 load_env_variables()
@@ -22,7 +26,9 @@ def get_response(url=ajax_url):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
+        logging.info(f"Successfully fetched data from {url}")
         return response
+
     except requests.RequestException as e:
         raise RuntimeError(f"Error while fetching data : {e}")
 
@@ -42,6 +48,8 @@ def get_dom(ajax_url=ajax_url, dom_file="src/data/last_dom.txt"):
             raise ValueError(
                 "The response from the server is empty. Please check the URL or your internet connection."
             )
+        logging.info("DOM fetched successfully.")
+
     except requests.RequestException as e:
         raise RuntimeError(f"Error while getching the DOM : {e}")
 

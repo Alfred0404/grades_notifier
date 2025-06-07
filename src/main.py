@@ -4,6 +4,11 @@ from extract_grades import *
 from send_ntfy_msg import send_ntfy_msg
 from utils import load_json, save_json
 import re
+import logging
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def print_diff_details(diff_json, notes_json):
@@ -34,7 +39,7 @@ def print_diff_details(diff_json, notes_json):
                 )
                 # print(diff_details)
             except (IndexError, KeyError, ValueError) as e:
-                print(f"Error processing path '{path}': {e}")
+                logging.error(f"Error processing path '{path}': {e}")
                 continue
     return diff_details
 
@@ -55,7 +60,7 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
     if diffs:
         # Update the old notes file with the new notes
         save_json(data, old_grades_path)
-        print("Differences found and old notes updated.")
+        logging.info("Differences found and old notes updated.")
         notes_json = load_json(current_grades_path)
         diff_details = print_diff_details(diffs, notes_json)
 
@@ -64,7 +69,7 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
             send_ntfy_msg(topic="NotesUpdate", message=message)
 
     else:
-        print("No differences found.")
+        logging.info("No differences found.")
 
 
 def main():

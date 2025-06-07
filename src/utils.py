@@ -1,5 +1,10 @@
 import json
 import os
+import logging
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def load_json(path):
@@ -13,7 +18,7 @@ def load_json(path):
         with open(path, "r", encoding="latin") as f:
             return json.load(f)
     except Exception as e:
-        print(f"Error loading JSON from {path}: {e}")
+        logging.error(f"Error loading JSON from {path}: {e}")
         return None
 
 
@@ -28,7 +33,7 @@ def save_json(data, path):
         with open(path, "w", encoding="latin") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
     except Exception as e:
-        print(f"Error saving JSON to {path}: {e}")
+        logging.error(f"Error saving JSON to {path}: {e}")
 
 
 def save_file(data, path):
@@ -42,7 +47,7 @@ def save_file(data, path):
         with open(path, "w", encoding="latin") as f:
             f.write(data)
     except Exception as e:
-        print(f"Error saving file to {path}: {e}")
+        logging.error(f"Error saving file to {path}: {e}")
 
 
 def load_file(path):
@@ -56,7 +61,7 @@ def load_file(path):
         with open(path, "r", encoding="latin") as f:
             return f.read()
     except Exception as e:
-        print(f"Error loading file from {path}: {e}")
+        logging.error(f"Error loading file from {path}: {e}")
         return None
 
 
@@ -72,4 +77,4 @@ def load_env_variables():
 
             load_dotenv()
         except ImportError:
-            print("dotenv module not found, skipping .env loading")
+            logging.warning("dotenv module not found, skipping .env loading")
