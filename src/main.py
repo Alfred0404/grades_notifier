@@ -60,7 +60,7 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
     if diffs:
         # Update the old notes file with the new notes
         save_json(data, old_grades_path)
-        logging.info("Differences found and old notes updated.")
+        logging.info("Differences found and old notes updated.\n")
         notes_json = load_json(current_grades_path)
         diff_details = print_diff_details(diffs, notes_json)
 
@@ -69,7 +69,7 @@ def compare_and_upgrade_grades(old_grades_path, current_grades_path, data):
             send_ntfy_msg(topic="NotesUpdate", message=message)
 
     else:
-        logging.info("No differences found.")
+        logging.info("No differences found.\n")
 
 
 def main():

@@ -11,6 +11,7 @@ logging.basicConfig(
 def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"):
     """
     Compare two JSON files and return the differences.
+
     @param old_file: Path to the old JSON file.
     @param new_file: Path to the new JSON file.
     @return: A dictionary containing the differences between the two JSON files.

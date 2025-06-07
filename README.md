@@ -1,6 +1,6 @@
 # 🗒️ ECE Grades Extractor
 
-Python scripts to automatically extract and track your grades from the ECE student portal.
+Python scripts to automatically extract and track your grades from the ECE student website.
 
 # ⚙️ Features
 
@@ -8,7 +8,7 @@ Python scripts to automatically extract and track your grades from the ECE stude
   _Year → Semester → Module → Note Type → Grade_
 - 📝 Outputs a JSON file after each extraction.
 - 🔍 Detects new grades by comparing the latest and previous files.
-- 📋 Logs detailed changes to help you track your academic progress over time.
+- 📱 Push notifications to keep you informed
 
 # 💾 Installation
 
@@ -42,40 +42,45 @@ If you'd like to run the script continuously on a server _(e.g. your Raspberry P
 
 Download from [docker.com](https://www.docker.com/products/docker-desktop/) if not already installed.
 
-### 4. Enable buildx for multi-architecture builds
-   ```bash
-   docker buildx create --use
-   ```
-
-### 5. Build the image for ARM (Raspberry Pi)
-   ```bash
-   docker buildx build --platform linux/arm/v7 -t grades_notifier:arm --load .
-   ```
-
-### 6. Save the Docker image to a file
-   ```bash
-   docker save -o grades_notifier_arm.tar grades_notifier:arm
-   ```
-
-### 7. Transfer the image to your Raspberry Pi
-   ```bash
-   scp grades_notifier_arm.tar pi@<raspberry_ip>:/home/pi/
-   ```
-
-### 8. Install Docker on the Raspberry Pi
+### 4. Install Docker on the Raspberry Pi
    ```
    curl -sSL https://get.docker.com | sh
    sudo usermod -aG docker pi
    ```
     ℹ️ Log out and log back in (or reboot) for the group change to apply
 
-### 9. Load and run the container on the Raspberry Pi
+### 5. Pull the docker image
+
+   Go check the [package](https://github.com/Alfred0404/notes_scraping/pkgs/container/grades_notifier) and their pull commands
    ```bash
-   docker load -i grades_notifier_arm.tar
-   docker run -d --restart unless-stopped --name grades_notifier_container grades_notifier:arm
+   docker pull ghcr.io/alfred0404/grades_notifier:<your_architecture>
+   ```
+### 6. create a `docker-compose.yml` file
+   It is important to environment variables in your docker compose file.
+
+   ```bash
+   version: "3.8"
+
+   services:
+   grades_notifier:
+      image: ghcr.io/alfred0404/grades_notifier:armv7
+      dns:
+         - 8.8.8.8
+      container_name: grades_notifier_container
+      restart: unless-stopped
+      environment:
+         - GRADES_URL=your_url
+         - CLICK_GRADES_URL=the_url_you_want_to_be_redirected_to
+         - NTFY_TOPIC=your_topic
+      command: python src/main.py
    ```
 
-🎉 The script should now run continuously in the background.
+### 6. Run the image
+   ```bash
+   docker compose up -d
+   ```
+
+🎉 The image should now run.
 
 # 🔒 ENV Variables
 | Variable         | Default                                                                                                                                | Description                             |
@@ -84,32 +89,8 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
 | CLICK_GRADES_URL | `https://campusonline.inseec.net/note/note.php?AccountName=<your_account_id>&couleur=VERT`                                              | The url you will be redirected to when clicking on the ntfy notification |
 | NTFY_TOPIC       | `<your_ntfy_topic_name>`                                                                                                                 | Your topic name, that must be the same as the one you created on your phone |
 
-# 🧠 Future Improvements
-
-Planned features:
-
-- 🕒 Periodic execution via cron or a background scheduling service
-- 📬 Email or Telegram notifications when new grades are detected
-- 🌐 Web dashboard for visualizing progress
-
 # 🤝 Credits
 
 This project is based on [BragdonD's](https://github.com/BragdonD/ECE-Scripts/tree/main) original JavaScript project.
+
 Huge thanks to him for laying the foundation! 🙌
-
-## Docker compose exemple
-
-```bash
-version: "3.8"
-
-services:
-  grades_notifier:
-    image: grades_notifier:latest
-    container_name: grades_notifier_container
-    restart: unless-stopped
-    env_file:
-      - GRADES_URL=your_url
-      - CLICK_GRADES_URL=the_url_you_want_to_be_redirected_to
-      - NTFY_TOPIC=your_topic
-    command: python src/main.py
-```
