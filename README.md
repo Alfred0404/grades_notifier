@@ -88,9 +88,3 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
 | GRADES_URL       | `https://campusonline.inseec.net/note/note_ajax.php?AccountName=<your_account>_id&c=classique&mode_affichage=&version=PROD&mode_test=N` | Url the script scrap from               |
 | CLICK_GRADES_URL | `https://campusonline.inseec.net/note/note.php?AccountName=<your_account_id>&couleur=VERT`                                              | The url you will be redirected to when clicking on the ntfy notification |
 | NTFY_TOPIC       | `<your_ntfy_topic_name>`                                                                                                                 | Your topic name, that must be the same as the one you created on your phone |
-
-# 🤝 Credits
-
-This project is based on [BragdonD's](https://github.com/BragdonD/ECE-Scripts/tree/main) original JavaScript project.
-
-Huge thanks to him for laying the foundation! 🙌

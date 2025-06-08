@@ -1,19 +1,20 @@
-FROM python:3.13.3-alpine
+FROM python:3.12-alpine
 
-# Pour éviter les warnings et accélérer pip
-ENV PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=1
+# Installer les dépendances de compilation pour pip si nécessaire
+RUN apk add --no-cache \
+    gcc \
+    musl-dev \
+    libffi-dev \
+    openssl-dev \
+    python3-dev \
+    libstdc++ \
+    build-base
 
 WORKDIR /app
 
 COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends gcc \
-    && pip install -r requirements.txt \
-    && apt-get purge -y --auto-remove gcc \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY src/ ./src/
+COPY . .
 
 CMD ["python", "src/main.py"]
