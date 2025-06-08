@@ -23,7 +23,7 @@ The following steps detail the setup I used on a **Raspberry Pi 3 B+** via SSH. 
 
 ### 2. Install Python dependencies
    ```bash
-   pip install requests beautifulsoup4 deepdiff dotenv
+   pip install -r requirements.txt
    ```
 
 ## 📱Setup ntfy
@@ -55,8 +55,10 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
    ```bash
    docker pull ghcr.io/alfred0404/grades_notifier:<your_architecture>
    ```
+   run `uname -a` to know the architecture.
+
 ### 6. create a `docker-compose.yml` file
-   It is important to environment variables in your docker compose file.
+   It is important to put your environment variables in your docker compose file.
 
    ```bash
    version: "3.8"
@@ -77,10 +79,44 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
 
 ### 6. Run the image
    ```bash
-   docker compose up -d
+   docker compose run --rm grades_notifier
    ```
 
-🎉 The image should now run.
+   The container should now run 🎉.
+
+### 7. Create a launch_grades_notifier.sh file
+
+   ```bash
+   # launch_grades_notifier exemple
+   #!/bin/bash
+
+   # Stop the script if an error occure
+   set -e
+
+   cd /home/pi/grades_notifier || { echo "Erreur : dossier introuvable"; exit 1; }
+
+   # Run the container and delete it after execution
+   docker compose run --rm grades_notifier
+   ```
+
+### 8. Setup a cronjob
+   Cron lets you schedule the container execution
+   - Run `crontab -e`
+   - If you run into this
+      ```bash
+      no crontab for pi - using an empty one
+      Select an editor. To change later, run 'select-editor'.
+      1. /bin/nano
+      2. /usr/bin/vim.basic
+      3. /bin/ed
+      4. /usr/bin/mcedit
+      Choose 1-4 [1]:
+      ```
+      Choose `nano` _(1)_
+   - Paste `30 7 * * * /home/pi/grades_notifier/run_notifier.sh >> /home/pi/grades_notifier/cron.log 2>&1` in your `crontab -e` file
+   - Go check the [cron documentation](https://docs.gitlab.com/topics/cron/) for more details
+
+   Cron should now execute the container everyday at 7:30 am 🎉.
 
 # 🔒 ENV Variables
 | Variable         | Default                                                                                                                                | Description                             |
@@ -88,3 +124,7 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
 | GRADES_URL       | `https://campusonline.inseec.net/note/note_ajax.php?AccountName=<your_account>_id&c=classique&mode_affichage=&version=PROD&mode_test=N` | Url the script scrap from               |
 | CLICK_GRADES_URL | `https://campusonline.inseec.net/note/note.php?AccountName=<your_account_id>&couleur=VERT`                                              | The url you will be redirected to when clicking on the ntfy notification |
 | NTFY_TOPIC       | `<your_ntfy_topic_name>`                                                                                                                 | Your topic name, that must be the same as the one you created on your phone |
+
+# Contribution
+
+Don't hesitate to contribute to this project 🤝.
