@@ -1,4 +1,4 @@
-FROM python:3.13.3-slim-bullseye
+FROM python:3.13.3-alpine
 
 # Pour éviter les warnings et accélérer pip
 ENV PYTHONUNBUFFERED=1 \

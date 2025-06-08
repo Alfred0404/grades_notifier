@@ -23,6 +23,5 @@ tests/
 docs/
 
 # Local data files
-notes.json
-notes_old.json
-last_dom.txt
+new_grades.json
+old_grades.json

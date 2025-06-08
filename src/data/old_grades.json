@@ -1,0 +1,1370 @@
+[
+    {
+        "year_name": "2024/2025 ING3 CLA",
+        "semesters": [
+            {
+                "semester_name": "semestre 5",
+                "semester_modules": [
+                    {
+                        "module_name": "Semestre Académique à l'étranger / Semester Study Abroad",
+                        "module_courses": [
+                            {
+                                "course_name": "Semestre académique à l'étranger S5 / Study Abroad Semester S5",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "semester_name": "semestre 6 >> inter s5 - paris s6",
+                "semester_modules": [
+                    {
+                        "module_name": "MODULE LFH 6 / LANGUAGES AND HUMAN SCIENCES UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "LV2 Japonais / Foreign language 2 Japanese",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "MOOC Actualites de la Géopolitique / MOOC News of Geopolitics",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Droit du travail / Labour Law",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Analyse financière et économique / Financial and Economic Analysis",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Anglais 6 / English 6",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "MOOC Dévelopement Durable / MOOC News of Geopolitics",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 18.63,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE SCIENCES ET TECHNIQUES 2 / SCIENCES & TECHNOLOGY UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "POO Java / OOP Java",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 18.0,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 18.5,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 10.6,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 17.5,
+                                                "coef": 75.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "MOOC Nanotechnologies / MOOC Nanotechnology",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 10.1,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Thermodynamique / Thermodynamics",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Initiation aux réseaux / Network Initiation",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Probabilités et statistiques / Probability and Statistics",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 83.33,
+                                        "grades": [
+                                            {
+                                                "grade": 5.5,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Calcul embarqué / Embedded numerical methods",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 22.22,
+                                        "grades": [
+                                            {
+                                                "grade": 18.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 44.44,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 33.33,
+                                        "grades": []
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "TechAway - Programming - N2 / TechAway Programming",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 20.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bonus / Bonus",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE STAGE  / INTERNSHIP UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "Stage ING3 / Internship ING3",
+                                "course_ponderation": 4.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE PROJET / Unit Project",
+                        "module_courses": [
+                            {
+                                "course_name": "MOOC Gestion de Projet / MOOC Project Management",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year_name": "ING2 CLA 2023-2024",
+        "semesters": [
+            {
+                "semester_name": "semestre 3",
+                "semester_modules": [
+                    {
+                        "module_name": "MODULE LANGUES ET FORMATION HUMAINES  / LANGUAGES AND HUMAN SCIENCES UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "LV2 Japonais / Japaneese",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.6,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Anglais / English 3",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.85,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "SHIFTs B2 / SHIFTs B2",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 17.07,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "L'ingénieur et la société  / The engineer and society 1",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 17.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE PROJET  / PROJECT UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "Projet ING2 - ECE CUP / ING2 Project - ECE-CUP",
+                                "course_ponderation": 4.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 13.67,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 14.65,
+                                                "coef": 60.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE SCIENCES & TECHNIQUES  / SCIENCES & TECHNOLOGY UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "Probabilités et Analyse  / Analysis",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": []
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Théorie des graphes / Graph Theory",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 16.67,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.75,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 13.0,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 18.33,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Electromagnétisme  / Electromagnetism 1",
+                                "course_ponderation": 4.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 20.0,
+                                        "grades": [
+                                            {
+                                                "grade": 8.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 80.0,
+                                        "grades": [
+                                            {
+                                                "grade": 10.25,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 10.0,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bases de Données / Databases",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 17.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 66.67,
+                                        "grades": [
+                                            {
+                                                "grade": 15.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "De l'Atome à la Puce / From atoms to electronic chips",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 22.22,
+                                        "grades": [
+                                            {
+                                                "grade": 14.75,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 44.44,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 15.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bonus / Bonus",
+                                "course_ponderation": 2.2,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "semester_name": "semestre 4",
+                "semester_modules": [
+                    {
+                        "module_name": "MODULE LANGUES ET FORMATION HUMAINES  / LANGUAGES AND HUMAN SCIENCES UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "LV2 Japonais / Japanese",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.7,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Anglais  / English",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.6,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Ethique de l'ingénieur / Engineering Ethics",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 16.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Initiation à la gestion d'entreprise / Introduction to Business Management",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 15.0,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "L'ingénieur et la société  / The engineer and society",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE PROJET  / PROJECT UNIT ECE-CUP",
+                        "module_courses": [
+                            {
+                                "course_name": "Projet ING2 - ECE CUP / ING2 Project - ECE-CUP",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE SCIENCES & TECHNIQUES  / SCIENCES & TECHNOLOGIES UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "Electromagnétisme  / Electromagnetism",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 20.0,
+                                        "grades": [
+                                            {
+                                                "grade": 7.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 80.0,
+                                        "grades": [
+                                            {
+                                                "grade": 3.75,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 5.75,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bases de Données / Databases",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 19.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 66.67,
+                                        "grades": [
+                                            {
+                                                "grade": 14.19,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Du capteur à l'automatique / Captors",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 44.44,
+                                        "grades": [
+                                            {
+                                                "grade": 9.63,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 6.29,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 9.14,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 22.22,
+                                        "grades": [
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 14.5,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Algèbre 3 & Analyse 4 / Algebra 3 & Analysis 4",
+                                "course_ponderation": 4.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": []
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Programmation Web / Web programming",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 66.67,
+                                        "grades": []
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bonus / Bonus",
+                                "course_ponderation": 1.9,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "MODULE STAGE / INTERNSHIP UNIT",
+                        "module_courses": [
+                            {
+                                "course_name": "Stage ING2 / ING2 Internship",
+                                "course_ponderation": 4.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 8.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "",
+                        "module_courses": [
+                            {
+                                "course_name": "Crédits par indulgence / Leniency credits",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year_name": "Année 1 - 2022/2023 - Septembre et Mars",
+        "semesters": [
+            {
+                "semester_name": "semestre 1",
+                "semester_modules": [
+                    {
+                        "module_name": "Module Langues et Formation Humaine / Unit Languages, Communication and Management",
+                        "module_courses": [
+                            {
+                                "course_name": "Japonais / Japanese",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.25,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Découverte de l'entreprise / Discovery of the company",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Anglais 1 / English 1",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 13.53,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": 4.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Maitrise du français écrit / Mastery of written French",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Module Sciences et Techniques / Unit Sciences and Technology",
+                        "module_courses": [
+                            {
+                                "course_name": "Analyse 1 et Algèbre 1  /  Analysis 1 and Algebra 1",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 11.5,
+                                                "coef": 25.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Electronique numérique / Electronics",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 19.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 16.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 13.0,
+                                                "coef": 25.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 44.44,
+                                        "grades": [
+                                            {
+                                                "grade": 9.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 11.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 11.5,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 22.22,
+                                        "grades": [
+                                            {
+                                                "grade": 11.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Mécanique et Oscillations 1 / Mechanics and Oscillations 1",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": 14.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 14.0,
+                                                "coef": 20.0
+                                            },
+                                            {
+                                                "grade": 11.75,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 7.25,
+                                                "coef": 40.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Informatique / Computing",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 28.57,
+                                        "grades": [
+                                            {
+                                                "grade": 17.5,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 19.0,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 14.5,
+                                                "coef": 20.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 42.86,
+                                        "grades": [
+                                            {
+                                                "grade": 14.25,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 28.57,
+                                        "grades": [
+                                            {
+                                                "grade": 19.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bonus (s'ajoute à la moyenne) / Bonus points (added to the student’s average)",
+                                "course_ponderation": 2.4,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 10.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "semester_name": "semestre 2",
+                "semester_modules": [
+                    {
+                        "module_name": "Module Langues et Formation Humaine / Unit Languages, Communication and Management",
+                        "module_courses": [
+                            {
+                                "course_name": "Anglais 2 / English 2",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 11.85,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": 10.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Japonais / Japanese",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 17.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Maitrise du français écrit / Mastery of written French",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 11.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 10.5,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 10.5,
+                                                "coef": 25.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "SHIFTs B1 / SHIFTs B1",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 18.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Module Projet ECE-CUP / Unit Project ECE-CUP",
+                        "module_courses": [
+                            {
+                                "course_name": "Projet ECE-CUP 2  / Projet ECE-CUP 2 / ECE CUP Project 2",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 18.5,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 16.55,
+                                                "coef": 60.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Module Sciences et Techniques / Unit Sciences and Technology",
+                        "module_courses": [
+                            {
+                                "course_name": "Bonus (s'ajoute à la moyenne) / Bonus points (added to the student’s average)",
+                                "course_ponderation": 2.2,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.5,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Electronique Analogique  / Analog and Digital Electrical Circuit",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 33.33,
+                                        "grades": [
+                                            {
+                                                "grade": 18.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 6.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 7.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 15.0,
+                                                "coef": 25.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 44.44,
+                                        "grades": [
+                                            {
+                                                "grade": 5.0,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 18.5,
+                                                "coef": 25.0
+                                            },
+                                            {
+                                                "grade": 5.5,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 22.22,
+                                        "grades": [
+                                            {
+                                                "grade": 20.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Informatique 2 / Computing 2",
+                                "course_ponderation": 6.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 28.57,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 42.86,
+                                        "grades": [
+                                            {
+                                                "grade": 10.25,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Projet",
+                                        "coefficient": 28.57,
+                                        "grades": [
+                                            {
+                                                "grade": 20.0,
+                                                "coef": 100.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Analyse 2 et Algèbre 2 / Analysis 2 and Algebra 2",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 15.5,
+                                                "coef": 40.0
+                                            },
+                                            {
+                                                "grade": 7.5,
+                                                "coef": 60.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Mécanique et Oscillations 2 / Mechanics and Oscillations 2",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 25.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": 12.0,
+                                                "coef": 50.0
+                                            },
+                                            {
+                                                "grade": 10.0,
+                                                "coef": 50.0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Module PACT / UNIT PACT",
+                        "module_courses": [
+                            {
+                                "course_name": "PACT / Pact",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

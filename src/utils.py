@@ -17,6 +17,7 @@ def load_json(path):
     try:
         with open(path, "r", encoding="latin") as f:
             return json.load(f)
+
     except Exception as e:
         logging.error(f"Error loading JSON from {path}: {e}")
         return None
@@ -31,7 +32,8 @@ def save_json(data, path):
     """
     try:
         with open(path, "w", encoding="latin") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+            json.dump(data, f, indent=4, ensure_ascii=False)
+
     except Exception as e:
         logging.error(f"Error saving JSON to {path}: {e}")
 
@@ -46,6 +48,7 @@ def save_file(data, path):
     try:
         with open(path, "w", encoding="latin") as f:
             f.write(data)
+
     except Exception as e:
         logging.error(f"Error saving file to {path}: {e}")
 
@@ -60,6 +63,7 @@ def load_file(path):
     try:
         with open(path, "r", encoding="latin") as f:
             return f.read()
+
     except Exception as e:
         logging.error(f"Error loading file from {path}: {e}")
         return None
@@ -76,5 +80,16 @@ def load_env_variables():
             from dotenv import load_dotenv
 
             load_dotenv()
+
         except ImportError:
             logging.warning("dotenv module not found, skipping .env loading")
+
+
+def get_env_variable(var_name):
+    """
+    Get the value of an environment variable.
+
+    @param var_name: The name of the environment variable to retrieve.
+    @return: The value of the environment variable, or None if it does not exist.
+    """
+    return os.getenv(var_name, None)
