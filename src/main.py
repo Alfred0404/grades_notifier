@@ -1,4 +1,3 @@
-import json
 import os
 import logging
 from scraper import get_response
@@ -6,10 +5,9 @@ from get_grades_diff import get_diffs, parse_diff_details
 from send_ntfy_msg import send_ntfy_msg
 from utils import load_env_variables, get_env_variable, save_json, load_json
 from extract_grades import extract_rows, parse_rows
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+from setup_logging import setup_logging
+setup_logging()
+logger = logging.getLogger(__name__)
 
 
 def compare_and_upgrade_grades(
@@ -30,7 +28,7 @@ def compare_and_upgrade_grades(
     if diffs:
         # Update the old notes file with the new notes
         save_json(data, old_grades_path)
-        logging.info("Differences found and old notes updated.\n")
+        logger.info("Differences found and old notes updated.\n")
         notes_json = load_json(current_grades_path)
         diff_details = parse_diff_details(diffs, notes_json)
 
@@ -38,7 +36,7 @@ def compare_and_upgrade_grades(
         for message in diff_details:
             send_ntfy_msg(topic=topic_name, message=message, redirect_url=redirect_url)
     else:
-        logging.info("No differences found.\n")
+        logger.info("No differences found.\n")
 
 
 def main():
@@ -57,25 +55,25 @@ def main():
     new_grades_path = "src/data/new_grades.json"
 
     if not os.path.exists(new_grades_path):
-        logging.info(f"Creating new grades file at {new_grades_path}")
+        logger.info(f"Creating new grades file at {new_grades_path}")
         save_json([], new_grades_path)
 
     old_grades_path = "src/data/old_grades.json"
 
     if not os.path.exists(old_grades_path):
-        logging.info(f"Creating old grades file at {old_grades_path}")
+        logger.info(f"Creating old grades file at {old_grades_path}")
         save_json([], old_grades_path)
 
-    logging.info("Starting the grades extraction process...")
+    logger.info("Starting the grades extraction process...")
     html = get_response(grades_url).text
     rows = extract_rows(html)
     result = parse_rows(rows)
 
     save_json(result["years"], new_grades_path)
-    logging.info("Grades extraction completed and saved to new_grades.json.")
+    logger.info("Grades extraction completed and saved to new_grades.json.")
 
     diffs = get_diffs(old_grades_path, new_grades_path)
-    logging.info(json.dumps(diffs, indent=4, ensure_ascii=False))
+    # logging.info(json.dumps(diffs, indent=4, ensure_ascii=False))
 
     compare_and_upgrade_grades(
         old_grades_path, new_grades_path, result["years"], grades_url, topic_name

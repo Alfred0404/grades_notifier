@@ -1,9 +1,8 @@
 import requests
 import logging
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+from setup_logging import setup_logging
+setup_logging()
+logger = logging.getLogger(__name__)
 
 
 def get_response(url):
@@ -16,7 +15,7 @@ def get_response(url):
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
-        logging.info(f"Successfully fetched data from {url}")
+        logger.info(f"Successfully fetched data from {url}")
         return response
 
     except requests.RequestException as e:

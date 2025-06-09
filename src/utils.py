@@ -1,10 +1,10 @@
 import json
 import os
 import logging
+from setup_logging import setup_logging
 
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+setup_logging()
+logger = logging.getLogger(__name__)
 
 
 def load_json(path):
@@ -19,7 +19,7 @@ def load_json(path):
             return json.load(f)
 
     except Exception as e:
-        logging.error(f"Error loading JSON from {path}: {e}")
+        logger.error(f"Error loading JSON from {path}: {e}")
         return None
 
 
@@ -35,7 +35,7 @@ def save_json(data, path):
             json.dump(data, f, indent=4, ensure_ascii=False)
 
     except Exception as e:
-        logging.error(f"Error saving JSON to {path}: {e}")
+        logger.error(f"Error saving JSON to {path}: {e}")
 
 
 def save_file(data, path):
@@ -50,7 +50,7 @@ def save_file(data, path):
             f.write(data)
 
     except Exception as e:
-        logging.error(f"Error saving file to {path}: {e}")
+        logger.error(f"Error saving file to {path}: {e}")
 
 
 def load_file(path):
@@ -65,7 +65,7 @@ def load_file(path):
             return f.read()
 
     except Exception as e:
-        logging.error(f"Error loading file from {path}: {e}")
+        logger.error(f"Error loading file from {path}: {e}")
         return None
 
 
@@ -82,7 +82,7 @@ def load_env_variables():
             load_dotenv()
 
         except ImportError:
-            logging.warning("dotenv module not found, skipping .env loading")
+            logger.warning("dotenv module not found, skipping .env loading")
 
 
 def get_env_variable(var_name):

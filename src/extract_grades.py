@@ -1,18 +1,31 @@
 import re
 import logging
+from setup_logging import setup_logging
 from bs4 import BeautifulSoup
 from utils import load_env_variables
 
+setup_logging()
 load_env_variables()
 
+logger = logging.getLogger(__name__)
 
 def extract_rows(html_content):
+    """Extract rows from the HTML content of the grades page.
+
+    @param html_content: The HTML content of the grades page.
+    @return: A list of BeautifulSoup row elements.
+    """
     soup = BeautifulSoup(html_content, "html.parser")
     tbody = soup.find("tbody")
     return tbody.find_all("tr")
 
 
 def parse_rows(rows):
+    """Parse the rows of grades and organize them into a structured format.
+
+    @param rows: A list of BeautifulSoup row elements containing grades data.
+    @return: A dictionary containing the structured grades data.
+    """
     result = {"years": []}
     current_year = None
     current_semester = None
@@ -60,7 +73,7 @@ def parse_rows(rows):
                 current_module["module_courses"].append(current_course)
                 # logging.info(f"Processing course: {libelle}")
             except ValueError:
-                logging.warning(f"Ignoring invalid ponderation: {ponderation}")
+                # logger.warning(f"Ignoring invalid ponderation: {ponderation}")
                 continue
 
         elif coefficient and note:
@@ -80,6 +93,11 @@ def parse_rows(rows):
 
 
 def extract_grades(note):
+    """Extract grade entries from a note string.
+
+    @param note: The note string containing grade information.
+    @return: A list of dictionaries containing grade values and coefficients.
+    """
     grade_entries = []
     if "(" in note and ")" in note:
         parts = note.split(" - ")
@@ -91,20 +109,26 @@ def extract_grades(note):
                     grade_coef = float(match.group(2).replace("%", ""))
                     grade_entries.append({"grade": grade_value, "coef": grade_coef})
                 except ValueError:
-                    logging.warning(f"Invalid grade or coef in part: {part}")
+                    logger.warning(f"Invalid grade or coef in part: {part}")
                     continue
     else:
         try:
             grade_value = float(note.replace(",", "."))
             grade_entries.append({"grade": grade_value, "coef": 100.0})
         except ValueError:
-            logging.warning(f"Invalid single grade: {note}")
+            # logger.warning(f"Invalid single grade: {note}")
+            pass
     return grade_entries
 
 
 def extract_float(text):
+    """Extract a float value from a string, removing any percentage signs.
+
+    @param text: The string containing the float value.
+    @return: The float value, or None if conversion fails.
+    """
     try:
         return float(text.replace("%", ""))
     except ValueError:
-        logging.warning(f"Invalid float string: {text}")
+        logger.warning(f"Invalid float string: {text}")
         return None

@@ -22,7 +22,7 @@ _**Get notified when a new grade pop**_
 # ☝️ Introduction
 
 As ECE doesn't provide any notification system for grades, I decided to code my own notification system.
-Coded in Python, the script extracts grades in a json file to check if there is new grades. If there is, I use ntfy API to send the notification to a sub.
+Grades Notifier is a lightweight Python tool that monitors your ECE student portal for new grades and instantly sends a push notification to your phone using [ntfy.sh](https://ntfy.sh).
 
 # ⚙️ Features
 
@@ -52,8 +52,21 @@ grades_notifier
 ├── docker-compose.yml
 ├── Dockerfile
 ├── README.md
-├── .dockerignore
 └── requirements.txt
+```
+
+# Prerequisite
+
+Before starting, ensure to have these installed on your machine
+- [Python 3.8 +](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [Docker](https://www.docker.com/products/docker-desktop/) _(if you plan to use it)_
+
+# Usage
+
+Run locally
+```bash
+python src/main.py
 ```
 
 # 💾 Installation
@@ -76,7 +89,7 @@ pip install -r requirements.txt
 
 ## 📱Setup ntfy
 
-ntfy is a free push notifications service that allows you to send messages to a sub (pub/sub system)
+ntfy is a free notifications service that allows you to send messages to a sub (pub/sub system).
 
 1. Install ntfy on your phone
 2. Create your topic and give it a name
@@ -92,7 +105,7 @@ Download from [docker.com](https://www.docker.com/products/docker-desktop/) if n
 
 ### 4. Install Docker on the Raspberry Pi
 
-```bash
+```sh
 curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 ```
@@ -101,32 +114,30 @@ sudo usermod -aG docker pi
 
 ### 5. Pull the docker image
 
-Go check the [package](https://github.com/Alfred0404/notes_scraping/pkgs/container/grades_notifier) and their pull commands
+Check the [package](https://github.com/Alfred0404/notes_scraping/pkgs/container/grades_notifier) for pull commands.
 
 ```bash
 docker pull ghcr.io/alfred0404/grades_notifier:<your_architecture>
 ```
 
-run `uname -a` to know the architecture.
+Run `uname -a` to know the architecture.
 
-### 6. create a `docker-compose.yml` file
+### 6. Create a `docker-compose.yml` file
 
-It is important to put your environment variables in your docker compose file.
+Ensure to put your environment variables in your `docker-compose/yml` file.
 
-```bash
-version: "3.8"
-
+```yml
 services:
 grades_notifier:
    image: ghcr.io/alfred0404/grades_notifier:armv7
    dns:
       - 8.8.8.8
    container_name: grades_notifier_container
-   restart: unless-stopped
+   restart: no
    environment:
-      - GRADES_URL=your_url
-      - CLICK_GRADES_URL=the_url_you_want_to_be_redirected_to
-      - NTFY_TOPIC=your_topic
+      - GRADES_URL=<your_url>
+      - CLICK_GRADES_URL=<the_url_you_want_to_be_redirected_to>
+      - NTFY_TOPIC=<your_topic>
    command: python src/main.py
 ```
 
@@ -144,7 +155,7 @@ The container should now run 🎉.
 # launch_grades_notifier exemple
 #!/bin/bash
 
-# Stop the script if an error occure
+# Stop the script if an error occur
 set -e
 
 cd /home/pi/grades_notifier || { echo "Erreur : can't find folder"; exit 1; }
@@ -158,7 +169,7 @@ docker compose run --rm grades_notifier
 Cron lets you schedule the container execution
 
 - Run `crontab -e`
-- If you run into this
+- If prompted to select an editor :
   ```bash
   no crontab for pi - using an empty one
   Select an editor. To change later, run 'select-editor'.
@@ -169,8 +180,12 @@ Cron lets you schedule the container execution
   Choose 1-4 [1]:
   ```
   Choose `nano` _(1)_
-- Paste `30 7 * * * /home/pi/grades_notifier/run_notifier.sh >> /home/pi/grades_notifier/cron.log 2>&1` in your `crontab -e` file
-- Go check the [cron documentation](https://docs.gitlab.com/topics/cron/) for more details
+- Add the following line to your crontab file
+
+```cron
+30 7 * * * /home/pi/grades_notifier/launch_grades_notifier.sh >> /home/pi/grades_notifier/cron.log 2>&1
+```
+- refer to the [cron documentation](https://docs.gitlab.com/topics/cron/) for more details.
 
 Cron should now execute the container everyday at 7:30 am 🎉.
 
@@ -184,4 +199,4 @@ Cron should now execute the container everyday at 7:30 am 🎉.
 
 # 🤝 Contribute
 
-Don't hesitate to contribute to this project 🤝.
+Feel free to contribute to this project. Your input is welcome !

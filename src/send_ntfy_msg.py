@@ -1,13 +1,12 @@
 import requests
 import os
 import logging
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+from setup_logging import setup_logging
 from utils import load_env_variables
-
+setup_logging()
 load_env_variables()
+
+logger = logging.getLogger(__name__)
 
 grades_url = os.getenv("CLICK_GRADES_URL")
 ntfy_topic = os.getenv("NTFY_TOPIC")
@@ -32,15 +31,15 @@ def send_ntfy_msg(topic, message, redirect_url):
             },
         )
         response.raise_for_status()
-        logging.info(f"Sending {message} to topic {topic}")
+        logger.info(f"Sending {message} to topic {topic}")
     except Exception as e:
-        logging.error(f"Failed to send ntfy message: {e}")
+        logger.error(f"Failed to send ntfy message: {e}")
 
 
 if __name__ == "__main__":
     try:
         send_ntfy_msg(ntfy_topic, "bogos binted")
-        logging.info("Notification sent successfully.")
+        logger.info("Notification sent successfully.")
 
     except Exception as e:
-        logging.error(f"Failed to send notification: {e}")
+        logger.error(f"Failed to send notification: {e}")

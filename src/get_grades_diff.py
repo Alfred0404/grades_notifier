@@ -3,10 +3,9 @@ import re
 from deepdiff import DeepDiff
 from utils import load_json
 import logging
-
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+from setup_logging import setup_logging
+setup_logging()
+logger = logging.getLogger(__name__)
 
 
 def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"):
@@ -55,10 +54,10 @@ def parse_diff_details(diff_json, notes_json):
                 diff_details.append(
                     f"{course['course_name']} | {course_part['grade_type']} | {grade_obj['grade']} | {grade_obj['coef']}%"
                 )
-                logging.info(diff_details[-1])
+                logger.info(diff_details[-1])
 
             except (IndexError, KeyError, ValueError) as e:
-                logging.error(f"Error processing path '{path}': {e}")
+                logger.error(f"Error processing path '{path}': {e}")
                 continue
 
     return diff_details
@@ -66,4 +65,4 @@ def parse_diff_details(diff_json, notes_json):
 
 if __name__ == "__main__":
     diffs = get_diffs("src/data/notes_old.json", "src/data/notes.json")
-    logging.info(json.dumps(diffs, indent=2, ensure_ascii=False))
+    logger.info(json.dumps(diffs, indent=2, ensure_ascii=False))
