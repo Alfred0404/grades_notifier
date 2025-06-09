@@ -55,14 +55,14 @@ grades_notifier
 └── requirements.txt
 ```
 
-# Prerequisite
+# ⚠️ Prerequisite
 
 Before starting, ensure to have these installed on your machine
 - [Python 3.8 +](https://www.python.org/downloads/)
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [Docker](https://www.docker.com/products/docker-desktop/) _(if you plan to use it)_
 
-# Usage
+# 📡 Usage
 
 Run locally
 ```bash
