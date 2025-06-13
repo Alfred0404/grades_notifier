@@ -72,7 +72,7 @@ def main():
     save_json(result["years"], new_grades_path)
     logger.info("Grades extraction completed and saved to new_grades.json.")
 
-    diffs = get_diffs(old_grades_path, new_grades_path)
+    _ = get_diffs(old_grades_path, new_grades_path)
     # logging.info(json.dumps(diffs, indent=4, ensure_ascii=False))
 
     compare_and_upgrade_grades(

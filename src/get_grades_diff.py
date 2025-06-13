@@ -49,11 +49,14 @@ def parse_diff_details(diff_json, notes_json):
                 semester = year["semesters"][indices[1]]
                 module = semester["semester_modules"][indices[2]]
                 course = module["module_courses"][indices[3]]
-                course_part = course["course_grades_type"][indices[4]]
-                grade_obj = course_part["grades"][indices[5]]
+                grade_type = course["course_grades_type"][indices[4]]
+                grade_obj = grade_type["grades"][indices[5]]
 
                 diff_details.append(
-                    f"{course['course_name']} | {course_part['grade_type']} | {grade_obj['grade']} | {grade_obj['coef']}%"
+                    {
+                        "title": f"{course['course_name'].replace("/", "-").split("-")[0]} - {grade_type['grade_type']}",
+                        "grade": f"Note {grade_obj['grade']} - {grade_obj['coef']}%",
+                    }
                 )
                 logger.info(diff_details[-1])
 
