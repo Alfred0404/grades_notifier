@@ -26,6 +26,7 @@ def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"
         raise ValueError(f"Could not load new notes from {new_file}")
 
     diff = DeepDiff(old_notes, new_notes, ignore_order=True)
+    logger.info(f"Differences found: {json.dumps(diff, indent=2, ensure_ascii=False)}")
     return diff
 
 

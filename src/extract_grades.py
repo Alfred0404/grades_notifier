@@ -105,18 +105,18 @@ def extract_grades(note):
             match = re.match(r"([\d.,]+)\s*\((\d+%)\)", part.strip())
             if match:
                 try:
-                    grade_value = float(match.group(1).replace(",", "."))
-                    grade_coef = float(match.group(2).replace("%", ""))
+                    grade_value = match.group(1).replace(",", ".")
+                    grade_coef = match.group(2).replace("%", "")
                     grade_entries.append({"grade": grade_value, "coef": grade_coef})
                 except ValueError:
                     logger.warning(f"Invalid grade or coef in part: {part}")
                     continue
     else:
         try:
-            grade_value = float(note.replace(",", "."))
+            grade_value = note.replace(",", ".")
             grade_entries.append({"grade": grade_value, "coef": 100.0})
         except ValueError:
-            # logger.warning(f"Invalid single grade: {note}")
+            logger.warning(f"Invalid single grade: {note}")
             pass
     return grade_entries
 
