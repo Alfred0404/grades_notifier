@@ -41,7 +41,22 @@
                             {
                                 "course_name": "Analyse financière et économique / Financial and Economic Analysis",
                                 "course_ponderation": 2.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "13.00",
+                                                "coef": "50"
+                                            },
+                                            {
+                                                "grade": "14.00",
+                                                "coef": "50"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Anglais 6 / English 6",
@@ -177,7 +192,12 @@
                                     {
                                         "grade_type": "Projet",
                                         "coefficient": 33.33,
-                                        "grades": []
+                                        "grades": [
+                                            {
+                                                "grade": "10.00",
+                                                "coef": "50"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -206,7 +226,7 @@
                                         "coefficient": 100.0,
                                         "grades": [
                                             {
-                                                "grade": "*",
+                                                "grade": "16.00",
                                                 "coef": 100.0
                                             }
                                         ]
