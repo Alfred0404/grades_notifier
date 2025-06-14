@@ -32,40 +32,54 @@ def get_diffs(old_file="src/data/notes_old.json", new_file="src/data/notes.json"
 
 def parse_diff_details(diff_json, notes_json):
     """
-    Print the details of the differences found in the notes.
-
-    @param diff_json: The JSON object containing the differences.
-    @param notes_json: The JSON object containing the current notes.
-    @return: A list of formatted strings detailing the differences.
+    Analyse les changements détectés et retourne une liste des nouvelles notes.
     """
     diff_details = []
+
     for change_type, changes in diff_json.items():
         logger.info(f"Processing change type: {change_type}")
         if change_type not in ["iterable_item_added", "values_changed"]:
             logger.info(f"Skipping change type: {change_type}")
             continue
+
         for path, value in changes.items():
             try:
-                # Ex: root[0]['semesters'][1]['modules'][1]['courses'][4]['courseParts'][1]['grades'][0]
+                # Récupère les indices pour accéder à grade_type
                 indices = [int(x) for x in re.findall(r"\[(\d+)\]", path)]
+                if len(indices) < 5:
+                    logger.warning(f"Path incomplet pour accéder à grade_type : {path}")
+                    continue
 
                 year = notes_json[indices[0]]
                 semester = year["semesters"][indices[1]]
                 module = semester["semester_modules"][indices[2]]
                 course = module["module_courses"][indices[3]]
                 grade_type = course["course_grades_type"][indices[4]]
-                grade_obj = grade_type["grades"][indices[5]]
+
+                # Récupération directe de la note depuis `value`
+                if change_type == "iterable_item_added":
+                    new_grade = value
+                elif change_type == "values_changed":
+                    new_grade = value.get("new_value")
+                else:
+                    continue  # au cas où
+
+                grade_str = (
+                    f"Note {new_grade['grade']} - {new_grade['coef']}%"
+                    if new_grade
+                    else "Note inconnue"
+                )
 
                 diff_details.append(
                     {
-                        "title": f"{course['course_name'].replace("/", "-").split("-")[0]} - {grade_type['grade_type']}",
-                        "grade": f"Note {grade_obj['grade']} - {grade_obj['coef']}%",
+                        "title": f"{course['course_name'].replace('/', '-').split('-')[0]} - {grade_type['grade_type']}",
+                        "grade": grade_str,
                     }
                 )
-                logger.info(diff_details[-1])
+                logger.info(f"✅ Nouvelle note détectée : {diff_details[-1]}")
 
-            except (IndexError, KeyError, ValueError) as e:
-                logger.error(f"Error processing path '{path}': {e}")
+            except (IndexError, KeyError, ValueError, TypeError) as e:
+                logger.error(f"❌ Erreur lors du traitement du path '{path}': {e}")
                 continue
 
     return diff_details
