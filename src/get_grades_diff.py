@@ -40,6 +40,10 @@ def parse_diff_details(diff_json, notes_json):
     """
     diff_details = []
     for change_type, changes in diff_json.items():
+        logger.info(f"Processing change type: {change_type}")
+        if change_type not in ["iterable_item_added", "values_changed"]:
+            logger.info(f"Skipping change type: {change_type}")
+            continue
         for path, value in changes.items():
             try:
                 # Ex: root[0]['semesters'][1]['modules'][1]['courses'][4]['courseParts'][1]['grades'][0]
