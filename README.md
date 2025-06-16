@@ -58,6 +58,7 @@ grades_notifier
 # ⚠️ Prerequisite
 
 Before starting, ensure to have these installed on your machine
+
 - [Python 3.8 +](https://www.python.org/downloads/)
 - [pip](https://pip.pypa.io/en/stable/installation/)
 - [Docker](https://www.docker.com/products/docker-desktop/) _(if you plan to use it)_
@@ -65,6 +66,7 @@ Before starting, ensure to have these installed on your machine
 # 📡 Usage
 
 Run locally
+
 ```bash
 python src/main.py
 ```
@@ -129,65 +131,25 @@ Ensure to put your environment variables in your `docker-compose/yml` file.
 ```yml
 services:
 grades_notifier:
-   image: ghcr.io/alfred0404/grades_notifier:armv7
-   dns:
-      - 8.8.8.8
-   container_name: grades_notifier_container
-   restart: no
-   environment:
-      - GRADES_URL=<your_url>
-      - CLICK_GRADES_URL=<the_url_you_want_to_be_redirected_to>
-      - NTFY_TOPIC=<your_topic>
-   command: python src/main.py
+  image: ghcr.io/alfred0404/grades_notifier:armv7
+  dns:
+    - 8.8.8.8
+  container_name: grades_notifier_container
+  restart: no
+  environment:
+    - GRADES_URL=<your_url>
+    - CLICK_GRADES_URL=<the_url_you_want_to_be_redirected_to>
+    - NTFY_TOPIC=<your_topic>
+  command: python src/main.py
 ```
 
 ### 6. Run the image
 
 ```bash
-docker compose run --rm grades_notifier
+docker compose up -d
 ```
 
 The container should now run 🎉.
-
-### 7. Create a launch_grades_notifier.sh file
-
-```bash
-# launch_grades_notifier exemple
-#!/bin/bash
-
-# Stop the script if an error occur
-set -e
-
-cd /home/pi/grades_notifier || { echo "Erreur : can't find folder"; exit 1; }
-
-# Run the container and delete it after execution
-docker compose run --rm grades_notifier
-```
-
-### 8. Setup a cronjob
-
-Cron lets you schedule the container execution
-
-- Run `crontab -e`
-- If prompted to select an editor :
-  ```bash
-  no crontab for pi - using an empty one
-  Select an editor. To change later, run 'select-editor'.
-  1. /bin/nano
-  2. /usr/bin/vim.basic
-  3. /bin/ed
-  4. /usr/bin/mcedit
-  Choose 1-4 [1]:
-  ```
-  Choose `nano` _(1)_
-- Add the following line to your crontab file
-
-```cron
-30 7 * * * /home/pi/grades_notifier/launch_grades_notifier.sh >> /home/pi/grades_notifier/cron.log 2>&1
-```
-- refer to the [cron documentation](https://docs.gitlab.com/topics/cron/) for more details.
-
-Cron should now execute the container everyday at 7:30 am 🎉.
 
 # 🔒 ENV Variables
 
