@@ -8,7 +8,7 @@ from extract_grades import extract_rows, parse_rows
 from setup_logging import setup_logging
 from get_new_grades import find_new_grades
 
-MODE = "PROD"  # Set to "DEBUG" for testing, "PROD" for production
+MODE = "DEBUG"  # Set to "DEBUG" for testing, "PROD" for production
 # Set the check interval based on the mode
 if MODE == "PROD":
     CHECK_INTERVAL = 10 * 60  # 10 minutes for production (default)

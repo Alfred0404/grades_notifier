@@ -23,7 +23,7 @@ def send_ntfy_msg(topic, message, redirect_url):
     try:
         response = requests.post(
             f"https://ntfy.sh/{topic}",
-            data=message["details"].split("/")[0].encode(encoding="latin"),
+            data=message["details"].split("/")[0].encode(encoding="utf-8"),
             headers={
                 "Tags": "face_in_clouds",
                 "Title": message["title"],
