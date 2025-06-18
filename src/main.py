@@ -2,11 +2,11 @@ import os
 import time
 import logging
 from scraper import get_response
-from get_grades_diff import get_diffs, parse_diff_details
 from send_ntfy_msg import send_ntfy_msg
 from utils import load_env_variables, get_env_variable, save_json, load_json
 from extract_grades import extract_rows, parse_rows
 from setup_logging import setup_logging
+from get_new_grades import find_new_grades
 
 MODE = "PROD"  # Set to "DEBUG" for testing, "PROD" for production
 # Set the check interval based on the mode
@@ -32,22 +32,22 @@ def compare_and_upgrade_grades(
     @param data: The extracted grades data to save if differences are found.
     """
     # Get the differences between the old and new notes
-    diffs = get_diffs(old_grades_path, current_grades_path)
+    new_grades = find_new_grades(old_grades_path, current_grades_path)
+    logger.info(f"New grades found: {new_grades}")
 
     # Print the differences
-    if diffs:
+    if new_grades:
         # Update the old notes file with the new notes
         save_json(data, old_grades_path)
         logger.info("Differences found and old notes updated.")
-        notes_json = load_json(current_grades_path)
-        diff_details = parse_diff_details(diffs, notes_json)
-
-        logger.info(diff_details)
+        # notes_json = load_json(current_grades_path)
 
         # Send a notification with the differences
-        for message in diff_details:
-            logger.info(f"Sending notification for {message}")
-            send_ntfy_msg(topic=topic_name, message=message, redirect_url=redirect_url)
+        for new_grade in new_grades:
+            # logger.info(f"Sending notification for {message}")
+            send_ntfy_msg(
+                topic=topic_name, message=new_grade, redirect_url=redirect_url
+            )
     else:
         logger.info("No differences found.")
 

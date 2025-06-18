@@ -26,7 +26,18 @@
                             {
                                 "course_name": "LV2 Japonais / Foreign language 2 Japanese",
                                 "course_ponderation": 2.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "10.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "MOOC Actualites de la Géopolitique / MOOC News of Geopolitics",
@@ -73,7 +84,7 @@
                                         "grades": [
                                             {
                                                 "grade": "18.63",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -108,7 +119,7 @@
                                         "grades": [
                                             {
                                                 "grade": "10.60",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -138,7 +149,7 @@
                                         "grades": [
                                             {
                                                 "grade": "10.10",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -152,18 +163,43 @@
                             {
                                 "course_name": "Initiation aux réseaux / Network Initiation",
                                 "course_ponderation": 2.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": []
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Probabilités et statistiques / Probability and Statistics",
                                 "course_ponderation": 3.0,
                                 "course_grades_type": [
                                     {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 16.67,
+                                        "grades": [
+                                            {
+                                                "grade": "19.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "grade_type": "Examen",
                                         "coefficient": 83.33,
                                         "grades": [
                                             {
                                                 "grade": "5.50",
+                                                "coef": "50"
+                                            },
+                                            {
+                                                "grade": "4.50",
                                                 "coef": "50"
                                             }
                                         ]
@@ -180,7 +216,7 @@
                                         "grades": [
                                             {
                                                 "grade": "18.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -195,6 +231,10 @@
                                         "grades": [
                                             {
                                                 "grade": "10.00",
+                                                "coef": "50"
+                                            },
+                                            {
+                                                "grade": "14.50",
                                                 "coef": "50"
                                             }
                                         ]
@@ -211,7 +251,7 @@
                                         "grades": [
                                             {
                                                 "grade": "20.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -227,7 +267,7 @@
                                         "grades": [
                                             {
                                                 "grade": "16.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -278,7 +318,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.60",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -294,7 +334,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.85",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -304,7 +344,7 @@
                                         "grades": [
                                             {
                                                 "grade": "12.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -320,7 +360,7 @@
                                         "grades": [
                                             {
                                                 "grade": "17.07",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -336,7 +376,7 @@
                                         "grades": [
                                             {
                                                 "grade": "17.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -417,7 +457,7 @@
                                         "grades": [
                                             {
                                                 "grade": "18.33",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -433,7 +473,7 @@
                                         "grades": [
                                             {
                                                 "grade": "8.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -463,7 +503,7 @@
                                         "grades": [
                                             {
                                                 "grade": "17.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -473,7 +513,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -508,7 +548,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -524,7 +564,7 @@
                                         "grades": [
                                             {
                                                 "grade": "12.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -550,7 +590,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.70",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -566,7 +606,7 @@
                                         "grades": [
                                             {
                                                 "grade": "12.60",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -576,7 +616,7 @@
                                         "grades": [
                                             {
                                                 "grade": "16.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -592,7 +632,7 @@
                                         "grades": [
                                             {
                                                 "grade": "16.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -628,7 +668,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -665,7 +705,7 @@
                                         "grades": [
                                             {
                                                 "grade": "7.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -695,7 +735,7 @@
                                         "grades": [
                                             {
                                                 "grade": "19.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -705,7 +745,7 @@
                                         "grades": [
                                             {
                                                 "grade": "14.19",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -796,7 +836,7 @@
                                         "grades": [
                                             {
                                                 "grade": "12.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -817,7 +857,7 @@
                                         "grades": [
                                             {
                                                 "grade": "8.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -858,7 +898,7 @@
                                         "grades": [
                                             {
                                                 "grade": "15.25",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -874,7 +914,7 @@
                                         "grades": [
                                             {
                                                 "grade": "16.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -890,7 +930,7 @@
                                         "grades": [
                                             {
                                                 "grade": "13.53",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -900,7 +940,7 @@
                                         "grades": [
                                             {
                                                 "grade": "4.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -997,7 +1037,7 @@
                                         "grades": [
                                             {
                                                 "grade": "11.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1013,7 +1053,7 @@
                                         "grades": [
                                             {
                                                 "grade": "14.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -1065,7 +1105,7 @@
                                         "grades": [
                                             {
                                                 "grade": "14.25",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -1075,7 +1115,7 @@
                                         "grades": [
                                             {
                                                 "grade": "19.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1091,7 +1131,7 @@
                                         "grades": [
                                             {
                                                 "grade": "10.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1117,7 +1157,7 @@
                                         "grades": [
                                             {
                                                 "grade": "11.85",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -1127,7 +1167,7 @@
                                         "grades": [
                                             {
                                                 "grade": "10.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1143,7 +1183,7 @@
                                         "grades": [
                                             {
                                                 "grade": "17.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1187,7 +1227,7 @@
                                         "grades": [
                                             {
                                                 "grade": "18.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1233,7 +1273,7 @@
                                         "grades": [
                                             {
                                                 "grade": "12.50",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1289,7 +1329,7 @@
                                         "grades": [
                                             {
                                                 "grade": "20.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1310,7 +1350,7 @@
                                         "grades": [
                                             {
                                                 "grade": "10.25",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     },
@@ -1320,7 +1360,7 @@
                                         "grades": [
                                             {
                                                 "grade": "20.00",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }
@@ -1391,7 +1431,7 @@
                                         "grades": [
                                             {
                                                 "grade": "Validé",
-                                                "coef": 100.0
+                                                "coef": "100.0"
                                             }
                                         ]
                                     }

@@ -23,7 +23,7 @@ def send_ntfy_msg(topic, message, redirect_url):
     try:
         response = requests.post(
             f"https://ntfy.sh/{topic}",
-            data=message["grade"].split("/")[0].encode(encoding="latin"),
+            data=message["details"].split("/")[0].encode(encoding="latin"),
             headers={
                 "Tags": "face_in_clouds",
                 "Title": message["title"],
@@ -32,9 +32,12 @@ def send_ntfy_msg(topic, message, redirect_url):
             },
         )
         response.raise_for_status()
-        logger.info(f"Sending {message["title"]} ; {message["grade"]} to topic {topic}")
+        logger.info(
+            f"✅ Sending {message["title"]} ; {message["details"]} to topic {topic}"
+        )
+
     except Exception as e:
-        logger.error(f"Failed to send ntfy message: {e}")
+        logger.error(f"🛑 Failed to send ntfy message: {e}")
 
 
 if __name__ == "__main__":
