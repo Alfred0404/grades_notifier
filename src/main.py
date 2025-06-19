@@ -88,8 +88,8 @@ def main():
         current_hour = now.tm_hour
         logger.info(f"Current hour: {current_hour}")
 
-        start_period = 3
-        end_period = 5
+        start_period = 1
+        end_period = 3
 
         # If the current hour is between 3 and 5, proceed with the extraction
         if (start_period <= current_hour < end_period) or MODE == "DEBUG":
