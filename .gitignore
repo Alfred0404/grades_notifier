@@ -87,4 +87,8 @@ GitHub.sublime-settings
 
 # docker
 docker-compose.yml
+
 TODO.md
+
+src/data/old_grades.json
+src/data/new_grades.json
