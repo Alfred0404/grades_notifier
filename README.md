@@ -14,7 +14,6 @@ _**Get notified when a new grade pop**_
         <li><a href="#structure">🏗️ Structure</a></li>
         <li><a href="#installation">💾 Installation</a></li>
         <li><a href="#docker">🐳 Docker</a></li>
-        <li><a href="#env-variables">🔒 ENV Variables</a></li>
         <li><a href="#contribute">🤝 Contribute</a></li>
     </ol>
 </details>
@@ -89,6 +88,16 @@ code .
 pip install -r requirements.txt
 ```
 
+### 3. Set up environment variables
+
+Copy the `.env.example` file to `.env` and fill in your own values:
+
+```bash
+cp .env.example .env
+```
+
+Then edit the `.env` file with your specific configuration.
+
 ## 📱Setup ntfy
 
 ntfy is a free notifications service that allows you to send messages to a sub (pub/sub system).
@@ -124,9 +133,9 @@ docker pull ghcr.io/alfred0404/grades_notifier:<your_architecture>
 
 Run `uname -a` to know the architecture.
 
-### 6. Create a `docker-compose.yml` file
+### 6. Create a `docker-compose.yml` file in the project root
 
-Ensure to put your environment variables in your `docker-compose/yml` file.
+Create a `docker-compose.yml` file in the root directory of the project (`grades_notifier/docker-compose.yml`). Ensure to put your environment variables in this file.
 
 ```yml
 services:
@@ -150,14 +159,6 @@ docker compose up -d
 ```
 
 The container should now run 🎉.
-
-# 🔒 ENV Variables
-
-| Variable         | Description                                                                 | Value                                                                                                                                   |
-| ---------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| GRADES_URL       | Url the script scrap from                                                   | `https://campusonline.inseec.net/note/note_ajax.php?AccountName=<your_account>_id&c=classique&mode_affichage=&version=PROD&mode_test=N` |
-| CLICK_GRADES_URL | The url you will be redirected to when clicking on the ntfy notification    | `https://campusonline.inseec.net/note/note.php?AccountName=<your_account_id>&couleur=VERT`                                              |
-| NTFY_TOPIC       | Your topic name, that must be the same as the one you created on your phone | `<your_ntfy_topic_name>`                                                                                                                |
 
 # 🤝 Contribute
 
