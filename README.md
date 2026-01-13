@@ -128,37 +128,37 @@ sudo usermod -aG docker pi
 Check the [package](https://github.com/Alfred0404/notes_scraping/pkgs/container/grades_notifier) for pull commands.
 
 ```bash
-docker pull ghcr.io/alfred0404/grades_notifier:<your_architecture>
+docker pull ghcr.io/alfred0404/grades_notifier:latest
 ```
-
-Run `uname -a` to know the architecture.
 
 ### 6. Create a `docker-compose.yml` file in the project root
 
-Create a `docker-compose.yml` file in the root directory of the project (`grades_notifier/docker-compose.yml`). Ensure to put your environment variables in this file.
+Create a `docker-compose.yml` file in the root directory of the project (`grades_notifier/docker-compose.yml`). Make sure to include your environment variables in this file. See [docker-compose.yml.example](/docker-compose.yml.example) for reference.
 
-```yml
-services:
-grades_notifier:
-  image: ghcr.io/alfred0404/grades_notifier:armv7
-  dns:
-    - 8.8.8.8
-  container_name: grades_notifier_container
-  restart: no
-  environment:
-    - GRADES_URL=<your_url>
-    - CLICK_GRADES_URL=<the_url_you_want_to_be_redirected_to>
-    - NTFY_TOPIC=<your_topic>
-  command: python src/main.py
+```bash
+mkdir -p ~/docker/grades_notifier
+cd ~/docker/grades_notifier
+nano docker-compose.yml
 ```
 
-### 6. Run the image
+### 7. Run the container
 
 ```bash
 docker compose up -d
 ```
 
-The container should now run 🎉.
+The container should now be running 🎉
+You will receive notifications on your ntfy topic whenever new grades are posted.
+
+To check the real-time output of the Docker container:
+
+```bash
+docker compose logs -f grades_notifier
+```
+
+## Troubleshooting
+
+The most common errors are related to incorrect URLs. If you encounter a URL-related error, you may need to modify the environment variables in `docker-compose.yml`.
 
 # 🤝 Contribute
 
