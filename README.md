@@ -163,3 +163,7 @@ The most common errors are related to incorrect URLs. If you encounter a URL-rel
 # 🤝 Contribute
 
 Feel free to contribute to this project. Your input is welcome !
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
