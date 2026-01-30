@@ -5,6 +5,7 @@ from urllib3.exceptions import NameResolutionError
 from requests.exceptions import ConnectionError
 from setup_logging import setup_logging
 
+
 setup_logging()
 logger = logging.getLogger(__name__)
 

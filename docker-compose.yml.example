@@ -1,0 +1,12 @@
+services:
+grades_notifier:
+  image: ghcr.io/alfred0404/grades_notifier:latest
+  dns:
+    - 8.8.8.8
+  container_name: grades_notifier_container
+  restart: no
+  environment:
+    - GRADES_URL=https://campusonline.inseec.net/note/note_ajax.php?AccountName=<YourAccountName>&c=classique&mode_affichage=&version=PROD&mode_test=N
+    - CLICK_GRADES_URL=https://campusonline.inseec.net/note/note.php?AccountName=<YourAccountName>&couleur=VERT
+    - NTFY_TOPIC=<YourTopic>
+  command: python src/main.py
