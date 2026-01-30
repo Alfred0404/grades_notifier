@@ -1,5 +1,161 @@
 [
     {
+        "year_name": "ING4 CLA 25/26",
+        "semesters": [
+            {
+                "semester_name": "semestre 1 >> majeure data ia >> tc ing4",
+                "semester_modules": [
+                    {
+                        "module_name": "Expertise technique et sectorielle DATA IA / Technical and sectoral expertise DATA AI",
+                        "module_courses": [
+                            {
+                                "course_name": "Bases de Données Avancées S7 / Advanced Databases",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Systèmes d'exploitation S7 / Operating Systems",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Big Data Framework S7 / Big Data Framework",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "0.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Introduction to BI S7 / Introduction to BI",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "15.63",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Data Visualisation S7 / Data Visualisation",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Introduction to machine learning S7 / Introduction to machine learning",
+                                "course_ponderation": 3.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "Datascience with Python S7 / Datascience with Python",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "16.67",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Bonus",
+                                "course_ponderation": 1.5,
+                                "course_grades_type": []
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Développement personnel et interculturel",
+                        "module_courses": [
+                            {
+                                "course_name": "Gestion Budgétaire / Budget Management",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "9.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "course_name": "Management d'Equipe / Team Management",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            },
+                            {
+                                "course_name": "English 7 / English",
+                                "course_ponderation": 1.0,
+                                "course_grades_type": []
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Métiers de l'ingénieur",
+                        "module_courses": [
+                            {
+                                "course_name": "Mineure International",
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "*",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "module_name": "Conception et conduite de projets innovants",
+                        "module_courses": [
+                            {
+                                "course_name": "Projet Pluridisciplinaire en équipe / Multidisciplinary Team Project",
+                                "course_ponderation": 5.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "year_name": "2024/2025 ING3 CLA",
         "semesters": [
             {
@@ -42,12 +198,34 @@
                             {
                                 "course_name": "MOOC Actualites de la Géopolitique / MOOC News of Geopolitics",
                                 "course_ponderation": 1.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "19.50",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Droit du travail / Labour Law",
                                 "course_ponderation": 1.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "14.44",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Analyse financière et économique / Financial and Economic Analysis",
@@ -72,7 +250,28 @@
                             {
                                 "course_name": "Anglais 6 / English 6",
                                 "course_ponderation": 3.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 75.0,
+                                        "grades": [
+                                            {
+                                                "grade": "15.40",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 25.0,
+                                        "grades": [
+                                            {
+                                                "grade": "7.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "MOOC Dévelopement Durable / MOOC News of Geopolitics",
@@ -118,7 +317,7 @@
                                         "coefficient": 33.33,
                                         "grades": [
                                             {
-                                                "grade": "10.60",
+                                                "grade": "10.48",
                                                 "coef": "100.0"
                                             }
                                         ]
@@ -158,7 +357,18 @@
                             {
                                 "course_name": "Thermodynamique / Thermodynamics",
                                 "course_ponderation": 2.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "11.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Initiation aux réseaux / Network Initiation",
@@ -167,12 +377,22 @@
                                     {
                                         "grade_type": "Contrôle Continu",
                                         "coefficient": 50.0,
-                                        "grades": []
+                                        "grades": [
+                                            {
+                                                "grade": "14.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
                                     },
                                     {
                                         "grade_type": "Examen",
                                         "coefficient": 50.0,
-                                        "grades": []
+                                        "grades": [
+                                            {
+                                                "grade": "12.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
@@ -186,7 +406,11 @@
                                         "grades": [
                                             {
                                                 "grade": "19.00",
-                                                "coef": "100.0"
+                                                "coef": "50"
+                                            },
+                                            {
+                                                "grade": "14.00",
+                                                "coef": "50"
                                             }
                                         ]
                                     },
@@ -259,7 +483,7 @@
                             },
                             {
                                 "course_name": "Bonus / Bonus",
-                                "course_ponderation": 1.0,
+                                "course_ponderation": 2.1,
                                 "course_grades_type": [
                                     {
                                         "grade_type": "Contrôle Continu",
@@ -281,7 +505,18 @@
                             {
                                 "course_name": "Stage ING3 / Internship ING3",
                                 "course_ponderation": 4.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "14.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -291,7 +526,23 @@
                             {
                                 "course_name": "MOOC Gestion de Projet / MOOC Project Management",
                                 "course_ponderation": 1.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": []
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "8.89",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
