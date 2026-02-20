@@ -70,6 +70,26 @@ Run locally
 python src/main.py
 ```
 
+
+## 🖥️ Web UI
+
+This branch includes a FastAPI + React interface that reads `src/data/new_grades.json` and displays grade entries with a red-to-green color scale from 0 to 20.
+
+### Run the UI locally
+
+```bash
+pip install -r requirements.txt
+npm --prefix frontend install
+npm --prefix frontend run build
+python -m uvicorn src.web.api:app --reload
+```
+
+Then open `http://127.0.0.1:8000`.
+
+### API endpoints
+
+- `GET /api/grades`: nested years payload and flattened grade rows.
+- `GET /api/meta`: last update timestamp and available filter values.
 # 💾 Installation
 
 The following steps detail the setup I used on a **Raspberry Pi 3 B+** via SSH. You can adapt these instructions to your own server or environment.

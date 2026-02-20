@@ -15,7 +15,7 @@ def load_json(path):
     @return: The loaded JSON data as a dictionary or list, or None if an error occurs.
     """
     try:
-        with open(path, "r", encoding="latin") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
     except Exception as e:
@@ -31,7 +31,7 @@ def save_json(data, path):
     @param path: The file path where the JSON data should be saved.
     """
     try:
-        with open(path, "w", encoding="latin") as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
 
     except Exception as e:
@@ -46,7 +46,7 @@ def save_file(data, path):
     @param path: The file path where the data should be saved.
     """
     try:
-        with open(path, "w", encoding="latin") as f:
+        with open(path, "w", encoding="utf-8") as f:
             f.write(data)
 
     except Exception as e:
@@ -61,7 +61,7 @@ def load_file(path):
     @return: The content of the file as a string, or None if an error occurs.
     """
     try:
-        with open(path, "r", encoding="latin") as f:
+        with open(path, "r", encoding="utf-8") as f:
             return f.read()
 
     except Exception as e:
