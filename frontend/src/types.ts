@@ -1,4 +1,4 @@
-export type ThemeName = "latte" | "frappe" | "macchiato" | "mocha";
+export type ThemeName = "light" | "dark";
 
 export type FlattenedGrade = {
   year: string;

@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--p-surface-ground);
+  color: var(--p-text-color);
+  font-family: "Inter Variable", "Inter", system-ui, sans-serif;
+  font-size: var(--p-font-size);
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --p-font-family: "Inter Variable", "Inter", system-ui, sans-serif;
+}
+
+.p-dark {
+  --p-surface-ground: #09090b;
+  --p-surface-card: #111113;
+  --p-surface-section: #111113;
+  --p-surface-overlay: #111113;
+}
+
+/* ─── Pivot table ─────────────────────────────────────────── */
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.grades-table th {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--p-text-muted-color);
+  border-bottom: 1px solid var(--p-content-border-color);
+  white-space: nowrap;
+}
+
+.grades-table th.grade-col {
+  text-align: center;
+  min-width: 8rem;
+}
+
+.grades-table td {
+  padding: 0;
+  border-bottom: 1px solid var(--p-content-border-color);
+  vertical-align: middle;
+}
+
+.grades-table td .cell-inner {
+  padding: 0.55rem 0.9rem;
+  overflow: hidden;
+  transition:
+    max-height 0.25s ease,
+    opacity 0.25s ease,
+    padding 0.25s ease;
+}
+
+.grades-table td.collapsed .cell-inner {
+  max-height: 0 !important;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.grades-table td .cell-inner.grade-cell-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.module-row {
+  cursor: pointer;
+  background-color: var(--p-content-hover-background);
+  user-select: none;
+}
+
+.module-row:hover {
+  filter: brightness(0.97);
+}
+
+.module-row td .cell-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+}
+
+.module-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 0.7rem;
+  color: var(--p-text-muted-color);
+}
+
+.module-arrow.collapsed {
+  transform: rotate(-90deg);
+}
+
+.course-row:hover {
+  background-color: var(--p-content-hover-background);
+}
+
+.grade-chip {
+  display: inline-block;
+  border-radius: 6px;
+  padding: 0.25rem 0.65rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  min-width: 3.5rem;
+}
+
+.grade-pending {
+  opacity: 0.45;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* ─── Search highlight ────────────────────────────────────── */
+mark {
+  background: var(--p-yellow-200, #fef08a);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.p-dark mark {
+  background: var(--p-yellow-800, #713f12);
+}
+
+/* ─── Sticky header ───────────────────────────────────────── */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--p-surface-card);
+  border-bottom: 1px solid var(--p-content-border-color);
+  padding: 0.75rem 1.25rem;
+}

@@ -10,9 +10,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
     "strict": true,
-    "types": ["vite/client", "vitest/globals"]
+    "types": ["vite/client"]
   },
-  "include": ["src", "tailwind.config.ts", "tailwind.catppuccin.plugin.ts", "vite.config.ts"]
+  "include": ["src", "vite.config.ts"]
 }
