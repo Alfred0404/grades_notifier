@@ -24,7 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src ./src
 COPY start.sh ./start.sh
 COPY .env.example ./.env.example
-COPY --from=frontend-builder /build/frontend/dist ./src/web/static
+COPY --from=frontend-builder /build/src/web/static ./src/web/static
 
 RUN chmod +x ./start.sh
 
