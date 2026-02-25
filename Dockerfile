@@ -3,7 +3,7 @@ WORKDIR /build/frontend
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ ./
-RUN npm run build
+RUN npm run build:docker
 
 FROM python:3.12-alpine
 
