@@ -22,8 +22,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY src ./src
+COPY start.sh ./start.sh
 COPY .env.example ./.env.example
 COPY --from=frontend-builder /build/frontend/dist ./src/web/static
 
+RUN chmod +x ./start.sh
+
 EXPOSE 8000
-CMD ["python", "-m", "uvicorn", "src.web.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["./start.sh"]
