@@ -25,74 +25,20 @@ body {
   --p-surface-overlay: #111113;
 }
 
-/* ─── Pivot table ─────────────────────────────────────────── */
-.grades-table {
-  width: 100%;
-  border-collapse: collapse;
+/* ─── Grades grid ─────────────────────────────────────────── */
+.grades-grid {
   font-size: 0.875rem;
-}
-
-.grades-table th {
-  padding: 0.6rem 0.9rem;
-  text-align: left;
-  font-weight: 600;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--p-text-muted-color);
-  border-bottom: 1px solid var(--p-content-border-color);
-  white-space: nowrap;
-}
-
-.grades-table th.grade-col {
-  text-align: center;
-  min-width: 8rem;
-}
-
-.grades-table td {
-  padding: 0;
-  border-bottom: 1px solid var(--p-content-border-color);
-  vertical-align: middle;
-}
-
-.grades-table td .cell-inner {
-  padding: 0.55rem 0.9rem;
-  overflow: hidden;
-  transition:
-    max-height 0.25s ease,
-    opacity 0.25s ease,
-    padding 0.25s ease;
-}
-
-.grades-table td.collapsed .cell-inner {
-  max-height: 0 !important;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.grades-table td .cell-inner.grade-cell-inner {
-  display: flex;
-  justify-content: center;
 }
 
 .module-row {
   cursor: pointer;
   background-color: var(--p-content-hover-background);
   user-select: none;
+  border-bottom: 1px solid var(--p-content-border-color);
 }
 
 .module-row:hover {
   filter: brightness(0.97);
-}
-
-.module-row td .cell-inner {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 600;
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
 }
 
 .module-arrow {

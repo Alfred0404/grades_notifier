@@ -103,6 +103,10 @@ const gradeTypes = computed(() => {
   return [...types].sort();
 });
 
+const gridCols = computed(
+  () => `1fr ${gradeTypes.value.map(() => "minmax(8rem, auto)").join(" ")}`,
+);
+
 const moduleGroups = computed((): ModuleGroup[] => {
   const modMap = new Map<string, Map<string, Record<string, FlattenedGrade>>>();
   for (const row of filtered.value) {
@@ -303,80 +307,79 @@ function highlight(text: string, query: string): string {
         No grades match the current filters.
       </Message>
 
-      <!-- ─── Pivot table ─── -->
+      <!-- ─── Grades grid ─── -->
       <div v-else class="table-wrapper">
-        <table class="grades-table">
-          <thead>
-            <tr>
-              <th>Course</th>
-              <th v-for="gt in gradeTypes" :key="gt" class="grade-col">
-                {{ gt }}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <template v-for="group in moduleGroups" :key="group.moduleName">
-              <!-- Module header row -->
-              <tr class="module-row" @click="toggleModule(group.moduleName)">
-                <td :colspan="1 + gradeTypes.length">
-                  <div class="cell-inner module-cell">
-                    <i
-                      class="pi pi-chevron-down module-arrow"
-                      :class="{
-                        'module-arrow--collapsed': collapsedModules.has(
-                          group.moduleName,
-                        ),
-                      }"
-                    />
-                    <!-- eslint-disable-next-line vue/no-v-html -->
-                    <span
-                      v-html="highlight(group.moduleName, searchDebounced)"
-                    />
-                    <span class="module-badge">
-                      {{ group.courses.length }}
-                      course{{ group.courses.length !== 1 ? "s" : "" }}
-                    </span>
-                    <span
-                      v-if="moduleAvg(group) !== null"
-                      class="grade-chip"
-                      :style="chipStyle(moduleAvg(group))"
-                    >
-                      {{ moduleAvg(group)!.toFixed(2) }}
-                    </span>
-                  </div>
-                </td>
-              </tr>
+        <div class="grades-grid">
+          <!-- Header -->
+          <div
+            class="grid-row grid-header-row"
+            :style="{ gridTemplateColumns: gridCols }"
+          >
+            <div class="grid-hcell">Course</div>
+            <div
+              v-for="gt in gradeTypes"
+              :key="gt"
+              class="grid-hcell grid-hcell--center"
+            >
+              {{ gt }}
+            </div>
+          </div>
 
-              <!-- Course rows -->
-              <tr
-                v-for="course in group.courses"
-                :key="`${group.moduleName}::${course.course}`"
-                class="course-row"
-              >
-                <!-- Course name -->
-                <td>
-                  <div
-                    class="cell-inner"
-                    :class="{
-                      'cell-inner--hidden': collapsedModules.has(
-                        group.moduleName,
-                      ),
-                    }"
-                  >
+          <template v-for="group in moduleGroups" :key="group.moduleName">
+            <!-- Module header row -->
+            <div class="module-row" @click="toggleModule(group.moduleName)">
+              <div class="module-cell">
+                <i
+                  class="pi pi-chevron-down module-arrow"
+                  :class="{
+                    'module-arrow--collapsed': collapsedModules.has(
+                      group.moduleName,
+                    ),
+                  }"
+                />
+                <!-- eslint-disable-next-line vue/no-v-html -->
+                <span v-html="highlight(group.moduleName, searchDebounced)" />
+                <span class="module-badge">
+                  {{ group.courses.length }}
+                  course{{ group.courses.length !== 1 ? "s" : "" }}
+                </span>
+                <span
+                  v-if="moduleAvg(group) !== null"
+                  class="grade-chip"
+                  :style="chipStyle(moduleAvg(group))"
+                >
+                  {{ moduleAvg(group)!.toFixed(2) }}
+                </span>
+              </div>
+            </div>
+
+            <!-- Collapsible course rows -->
+            <div
+              class="courses-collapse"
+              :class="{
+                'courses-collapse--hidden': collapsedModules.has(
+                  group.moduleName,
+                ),
+              }"
+            >
+              <div class="courses-collapse-inner">
+                <div
+                  v-for="course in group.courses"
+                  :key="`${group.moduleName}::${course.course}`"
+                  class="grid-row course-row"
+                  :style="{ gridTemplateColumns: gridCols }"
+                >
+                  <!-- Course name -->
+                  <div class="grid-cell">
                     <!-- eslint-disable-next-line vue/no-v-html -->
                     <span v-html="highlight(course.course, searchDebounced)" />
                   </div>
-                </td>
 
-                <!-- Grade cells -->
-                <td v-for="gt in gradeTypes" :key="gt" class="grade-td">
+                  <!-- Grade cells -->
                   <div
-                    class="cell-inner cell-inner--center"
-                    :class="{
-                      'cell-inner--hidden': collapsedModules.has(
-                        group.moduleName,
-                      ),
-                    }"
+                    v-for="gt in gradeTypes"
+                    :key="gt"
+                    class="grid-cell grid-cell--center"
                   >
                     <span
                       v-if="course.gradesByType[gt]"
@@ -399,11 +402,11 @@ function highlight(text: string, query: string): string {
                     </span>
                     <span v-else class="no-grade">—</span>
                   </div>
-                </td>
-              </tr>
-            </template>
-          </tbody>
-        </table>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
       </div>
     </div>
   </div>
@@ -520,6 +523,7 @@ function highlight(text: string, query: string): string {
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
+  padding: 0.65rem 0.9rem;
 }
 
 .module-arrow {
@@ -542,28 +546,62 @@ function highlight(text: string, query: string): string {
   padding: 0.08rem 0.45rem;
 }
 
-/* ─── Cell collapse animation ─── */
-.cell-inner {
-  overflow: hidden;
-  transition:
-    max-height 0.22s ease,
-    opacity 0.22s ease,
-    padding 0.22s ease;
-  max-height: 5rem;
-  opacity: 1;
-  padding: 0.55rem 0.85rem;
+/* ─── Grid layout ─── */
+.grid-row {
+  display: grid;
 }
 
-.cell-inner--hidden {
-  max-height: 0 !important;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+.grid-header-row {
+  border-bottom: 1px solid var(--p-content-border-color);
 }
 
-.cell-inner--center {
+.grid-hcell {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--p-text-muted-color);
+  white-space: nowrap;
+}
+
+.grid-hcell--center {
+  text-align: center;
+}
+
+.grid-cell {
+  padding: 0.55rem 0.9rem;
   display: flex;
+  align-items: center;
+}
+
+.grid-cell--center {
   justify-content: center;
+}
+
+.course-row {
+  border-bottom: 1px solid var(--p-content-border-color);
+}
+
+.course-row:hover {
+  background-color: var(--p-content-hover-background);
+}
+
+/* ─── Collapse animation ─── */
+.courses-collapse {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.25s ease;
+}
+
+.courses-collapse--hidden {
+  grid-template-rows: 0fr;
+}
+
+.courses-collapse-inner {
+  overflow: hidden;
+  min-height: 0;
 }
 
 /* ─── Grade chip ─── */
@@ -587,9 +625,5 @@ function highlight(text: string, query: string): string {
 .no-grade {
   color: var(--p-text-muted-color);
   font-size: 0.85rem;
-}
-
-.grade-td {
-  text-align: center;
 }
 </style>
