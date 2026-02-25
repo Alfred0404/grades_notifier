@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - "feature/**"
   workflow_dispatch:
 
 permissions:
@@ -42,5 +43,4 @@ jobs:
             ghcr.io/alfred0404/grades_notifier:amd64
             ghcr.io/alfred0404/grades_notifier:arm64
             ghcr.io/alfred0404/grades_notifier:armv7
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          no-cache: true

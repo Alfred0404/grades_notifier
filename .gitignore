@@ -13,6 +13,7 @@ eggs/
 .eggs/
 lib/
 lib64/
+!frontend/src/lib/
 parts/
 sdist/
 var/
@@ -92,3 +93,6 @@ TODO.md
 
 src/data/old_grades.json
 src/data/new_grades.json
+frontend/node_modules
+frontend/dist
+src/web/static

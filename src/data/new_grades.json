@@ -11,19 +11,41 @@
                             {
                                 "course_name": "Bases de Données Avancées S7 / Advanced Databases",
                                 "course_ponderation": 2.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "13.65",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Systèmes d'exploitation S7 / Operating Systems",
                                 "course_ponderation": 1.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "16.50",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Big Data Framework S7 / Big Data Framework",
                                 "course_ponderation": 3.0,
                                 "course_grades_type": [
                                     {
-                                        "grade_type": "Examen",
+                                        "grade_type": "Contrôle Continu",
                                         "coefficient": 50.0,
                                         "grades": [
                                             {
@@ -39,11 +61,21 @@
                                 "course_ponderation": 3.0,
                                 "course_grades_type": [
                                     {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "18.54",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    },
+                                    {
                                         "grade_type": "Examen",
                                         "coefficient": 50.0,
                                         "grades": [
                                             {
-                                                "grade": "15.63",
+                                                "grade": "11.25",
                                                 "coef": "100.0"
                                             }
                                         ]
@@ -53,16 +85,58 @@
                             {
                                 "course_name": "Data Visualisation S7 / Data Visualisation",
                                 "course_ponderation": 3.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "16.50",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "13.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Introduction to machine learning S7 / Introduction to machine learning",
-                                "course_ponderation": 3.0,
-                                "course_grades_type": []
+                                "course_ponderation": 2.0,
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "15.97",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "11.18",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "Datascience with Python S7 / Datascience with Python",
-                                "course_ponderation": 2.0,
+                                "course_ponderation": 1.0,
                                 "course_grades_type": [
                                     {
                                         "grade_type": "Examen",
@@ -73,13 +147,34 @@
                                                 "coef": "100.0"
                                             }
                                         ]
+                                    },
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 50.0,
+                                        "grades": [
+                                            {
+                                                "grade": "14.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
                             {
                                 "course_name": "Bonus",
                                 "course_ponderation": 1.5,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Contrôle Continu",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "11.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -105,7 +200,18 @@
                             {
                                 "course_name": "Management d'Equipe / Team Management",
                                 "course_ponderation": 1.0,
-                                "course_grades_type": []
+                                "course_grades_type": [
+                                    {
+                                        "grade_type": "Examen",
+                                        "coefficient": 100.0,
+                                        "grades": [
+                                            {
+                                                "grade": "9.00",
+                                                "coef": "100.0"
+                                            }
+                                        ]
+                                    }
+                                ]
                             },
                             {
                                 "course_name": "English 7 / English",
@@ -119,14 +225,14 @@
                         "module_courses": [
                             {
                                 "course_name": "Mineure International",
-                                "course_ponderation": 2.0,
+                                "course_ponderation": 5.0,
                                 "course_grades_type": [
                                     {
                                         "grade_type": "Contrôle Continu",
                                         "coefficient": 100.0,
                                         "grades": [
                                             {
-                                                "grade": "*",
+                                                "grade": "12.00",
                                                 "coef": "100.0"
                                             }
                                         ]
