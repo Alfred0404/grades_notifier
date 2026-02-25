@@ -86,6 +86,35 @@ python -m uvicorn src.web.api:app --reload
 
 Then open `http://127.0.0.1:8000`.
 
+### Run it on your server
+
+For my personnal use, I run this project on my rpi server.
+
+1. Install Docker
+```bash
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker $USER
+```
+
+2. Create docker-compose directory
+```bash
+mkdir -p ~/docker/grades_notifier
+cd ~/docker/grades_notifier
+```
+
+3. Set up `docker-compose.yml` *(using `docker-compose.yml.example` as template)*
+```bash
+nano docker-compose.yml
+```
+Fill in environment variables: `GRADES_URL`, `CLICK_GRADES_URL`, `NTFY_TOPIC`
+
+4. Run the container
+```bash
+docker compose up -d
+```
+5. The web UI is accessible at `http://<serrver-ip>:8000`
+
+
 ### API endpoints
 
 - `GET /api/grades`: nested years payload and flattened grade rows.
